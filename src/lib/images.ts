@@ -14,7 +14,10 @@ export type CategoryKey =
   | "wedding"
   | "pre-wedding"
   | "baby"
+<<<<<<< HEAD
   | "Maternity"
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
   | "events"
   | "commercial"
   | "team";
@@ -22,13 +25,19 @@ export type CategoryKey =
 export type Album = {
   photos: string[];
   events?: Record<string, string[]>;
+<<<<<<< HEAD
   videos?: string[];
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
 };
 
 export type CategoryData = {
   albums: Record<string, Album>;
   loose: string[];
+<<<<<<< HEAD
   videos?: string[];
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
 };
 
 export type Manifest = {
@@ -41,7 +50,10 @@ export const CATEGORY_LABELS: Record<CategoryKey, string> = {
   wedding: "Wedding",
   "pre-wedding": "Pre-Wedding",
   baby: "Baby",
+<<<<<<< HEAD
   Maternity: "Maternity",
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
   events: "Events",
   commercial: "Commercial",
   team: "Team",
@@ -54,7 +66,12 @@ export const PUBLIC_CATEGORIES: CategoryKey[] = [
   "wedding",
   "pre-wedding",
   "baby",
+<<<<<<< HEAD
   "Maternity",
+=======
+  "events",
+  "commercial",
+>>>>>>> b5905f9 (Fresh clean commit)
 ];
 
 /* ─── Manifest loading (cached + deduped) ─── */
@@ -79,11 +96,18 @@ function normalizeManifest(raw: any): Manifest {
       const albumsRecord: Record<string, Album> = {};
       for (const [aKey, aVal] of Object.entries(v.albums ?? {})) {
         const albumVal = aVal as any;
+<<<<<<< HEAD
 albumsRecord[aKey] = {
             photos: albumVal.photos ?? [],
             events: albumVal.events ?? {},
             videos: albumVal.videos ?? (albumVal.video ? [albumVal.video] : []),
           };
+=======
+        albumsRecord[aKey] = {
+          photos: albumVal.photos ?? [],
+          events: albumVal.events ?? {},
+        };
+>>>>>>> b5905f9 (Fresh clean commit)
       }
       cats[key as CategoryKey] = {
         albums: albumsRecord,
@@ -130,17 +154,25 @@ export type AlbumInfo = {
   cover: string;       // first photo
   coverAlt: string;    // second photo (for collage) or same as cover
   photoCount: number;
+<<<<<<< HEAD
   videos?: string[];   // optional videos for album
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
 };
 
 /* ─── Helper: get all photos for a category (albums + loose) ─── */
 
+<<<<<<< HEAD
 function getAllPhotos(catData: CategoryData, category?: CategoryKey): string[] {
+=======
+function getAllPhotos(catData: CategoryData): string[] {
+>>>>>>> b5905f9 (Fresh clean commit)
   const all: string[] = [];
   if (catData.albums) {
     for (const album of Object.values(catData.albums)) {
       if (album?.photos) all.push(...album.photos);
       if (album?.events) {
+<<<<<<< HEAD
         // For wedding category, prioritize "wedding" event photos
         if (category === "wedding") {
           const eventEntries = Object.entries(album.events);
@@ -152,6 +184,10 @@ function getAllPhotos(catData: CategoryData, category?: CategoryKey): string[] {
           for (const evPhotos of Object.values(album.events)) {
             all.push(...evPhotos);
           }
+=======
+        for (const evPhotos of Object.values(album.events)) {
+          all.push(...evPhotos);
+>>>>>>> b5905f9 (Fresh clean commit)
         }
       }
     }
@@ -187,7 +223,11 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
     const data = manifest.categories[cat];
     if (!data) continue;
 
+<<<<<<< HEAD
 // Named albums
+=======
+    // Named albums
+>>>>>>> b5905f9 (Fresh clean commit)
     if (data.albums) {
       for (const [slug, album] of Object.entries(data.albums)) {
         let totalCount = album?.photos?.length || 0;
@@ -195,6 +235,7 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
         let cover2 = album?.photos?.[1];
 
         if (album?.events) {
+<<<<<<< HEAD
           // Prioritize "wedding" event for cover selection in wedding category
           const eventEntries = Object.entries(album.events);
           const prioritizedEvents = cat === "wedding"
@@ -203,14 +244,23 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
             : eventEntries;
 
           for (const evPhotos of prioritizedEvents.map(([_, v]) => v)) {
+=======
+          for (const evPhotos of Object.values(album.events)) {
+>>>>>>> b5905f9 (Fresh clean commit)
             totalCount += evPhotos.length;
             if (!cover1) { cover1 = evPhotos[0]; cover2 = evPhotos[1]; }
             else if (!cover2) { cover2 = evPhotos[0]; }
           }
         }
+<<<<<<< HEAD
 
         if (!totalCount) continue;
 
+=======
+        
+        if (!totalCount) continue;
+        
+>>>>>>> b5905f9 (Fresh clean commit)
         albums.push({
           slug,
           category: cat,
@@ -218,7 +268,10 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
           cover: cover1 || "/placeholder.svg",
           coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
           photoCount: totalCount,
+<<<<<<< HEAD
           videos: album?.videos,
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
         });
       }
     }
@@ -259,6 +312,7 @@ export function getAlbumPhotos(
   if (!details) return [];
   const all = [...(details.photos || [])];
   if (details.events) {
+<<<<<<< HEAD
     // For wedding category, prioritize "wedding" event photos
     if (category === "wedding") {
       const eventEntries = Object.entries(details.events);
@@ -269,6 +323,9 @@ export function getAlbumPhotos(
     } else {
       for (const ev of Object.values(details.events)) all.push(...ev);
     }
+=======
+    for (const ev of Object.values(details.events)) all.push(...ev);
+>>>>>>> b5905f9 (Fresh clean commit)
   }
   return all;
 }
@@ -283,7 +340,11 @@ export function getHighlights(
   for (const cat of PUBLIC_CATEGORIES) {
     const data = manifest.categories[cat];
     if (!data) continue;
+<<<<<<< HEAD
     const all = getAllPhotos(data, cat);
+=======
+    const all = getAllPhotos(data);
+>>>>>>> b5905f9 (Fresh clean commit)
     for (const src of all.slice(0, cap)) {
       items.push({ src, category: cat, label: CATEGORY_LABELS[cat] });
     }
@@ -300,7 +361,11 @@ export function pickFromCategory(
 ): string[] {
   const data = manifest.categories[category];
   if (!data) return [];
+<<<<<<< HEAD
   return getAllPhotos(data, category).slice(0, count);
+=======
+  return getAllPhotos(data).slice(0, count);
+>>>>>>> b5905f9 (Fresh clean commit)
 }
 
 /* ─── Get all photos across categories for Masonry Grid ─── */
@@ -309,7 +374,11 @@ export function getAllMixedPhotos(manifest: Manifest, filterCat?: CategoryKey): 
   const lists = PUBLIC_CATEGORIES.map((cat) => {
     if (filterCat && filterCat !== cat) return [];
     const data = manifest.categories[cat];
+<<<<<<< HEAD
     return data ? getAllPhotos(data, cat) : [];
+=======
+    return data ? getAllPhotos(data) : [];
+>>>>>>> b5905f9 (Fresh clean commit)
   });
 
   // Calculate the maximum length among all lists to know when to stop

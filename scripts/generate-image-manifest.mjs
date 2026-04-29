@@ -18,7 +18,10 @@ import { join } from "node:path";
 const ROOT = join(process.cwd(), "public", "images");
 const OUT = join(ROOT, "manifest.json");
 const VALID = /\.(jpe?g|png|webp|avif|gif)$/i;
+<<<<<<< HEAD
 const VIDEO = /\.(mp4|webm|mov)$/i;
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
 
 if (!existsSync(ROOT)) {
   console.error("public/images/ not found");
@@ -41,11 +44,15 @@ for (const catName of readdirSync(ROOT)) {
     if (statSync(entryPath).isDirectory()) {
       // This is an album sub-directory
       const albumData = { photos: [], events: {} };
+<<<<<<< HEAD
       const videos = [];
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
 
       for (const albumEntry of readdirSync(entryPath)) {
         const albumEntryPath = join(entryPath, albumEntry);
 
+<<<<<<< HEAD
         // Check for video file in album root
         if (VIDEO.test(albumEntry)) {
           videos.push(encodeURI(`/images/${catName}/${entry}/${albumEntry}`));
@@ -75,22 +82,45 @@ for (const catName of readdirSync(ROOT)) {
         } else if (VALID.test(albumEntry)) {
           // Loose image inside the album directory
           albumData.photos.push(encodeURI(`/images/${catName}/${entry}/${albumEntry}`));
+=======
+        if (statSync(albumEntryPath).isDirectory()) {
+          // This is an EVENT sub-directory (e.g. haldi, wedding)
+          const eventPhotos = readdirSync(albumEntryPath)
+            .filter((f) => VALID.test(f))
+            .sort()
+            .map((f) => `/images/${catName}/${entry}/${albumEntry}/${f}`);
+
+          if (eventPhotos.length) {
+            albumData.events[albumEntry] = eventPhotos;
+            total += eventPhotos.length;
+          }
+        } else if (VALID.test(albumEntry)) {
+          // Loose image inside the album directory
+          albumData.photos.push(`/images/${catName}/${entry}/${albumEntry}`);
+>>>>>>> b5905f9 (Fresh clean commit)
           total++;
         }
       }
 
       albumData.photos.sort();
 
+<<<<<<< HEAD
       if (videos.length) {
         albumData.videos = videos;
       }
 
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
       if (albumData.photos.length || Object.keys(albumData.events).length) {
         albums[entry] = albumData;
       }
     } else if (VALID.test(entry)) {
       // Loose image file directly in category
+<<<<<<< HEAD
       loose.push(encodeURI(`/images/${catName}/${entry}`));
+=======
+      loose.push(`/images/${catName}/${entry}`);
+>>>>>>> b5905f9 (Fresh clean commit)
       total++;
     }
   }

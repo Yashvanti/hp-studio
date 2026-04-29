@@ -141,12 +141,15 @@ export default function PortfolioPage() {
 function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
   const cardRef = useRef<HTMLDivElement>(null);
 
+<<<<<<< HEAD
   const renderItem = (item: string) => {
     return item.split('&').map((part, i) => (
       i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
     ));
   };
 
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (!cardRef.current) return;
@@ -169,6 +172,7 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
       className="album-card group relative overflow-hidden rounded-2xl md:rounded-3xl cursor-pointer block aspect-[4/3] md:aspect-[3/2] will-change-transform"
       style={{ boxShadow: "0 12px 40px -15px rgba(0,0,0,0.2)" }}
     >
+<<<<<<< HEAD
       {/* Cover: image or video thumbnail */}
       {album.videos && album.videos.length > 0 ? (
         <div className="relative w-full h-full">
@@ -212,17 +216,46 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
               </div>
             </div>
           ) : (
+=======
+      {/* Cover collage: two images side by side */}
+      {album.cover !== album.coverAlt ? (
+        <div className="flex w-full h-full">
+          <div className="w-1/2 h-full overflow-hidden">
+>>>>>>> b5905f9 (Fresh clean commit)
             <img
               src={album.cover}
               alt={album.displayName}
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
+<<<<<<< HEAD
           )}
         </>
       )}
 
 {/* Dark gradient overlay covering whole card smoothly */}
+=======
+          </div>
+          <div className="w-1/2 h-full overflow-hidden border-l border-white/20">
+            <img
+              src={album.coverAlt}
+              alt={album.displayName}
+              loading="lazy"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+        </div>
+      ) : (
+        <img
+          src={album.cover}
+          alt={album.displayName}
+          loading="lazy"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+      )}
+
+      {/* Dark gradient overlay covering whole card smoothly */}
+>>>>>>> b5905f9 (Fresh clean commit)
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-500 ease-out" />
 
       {/* Centered Album name (Replaces bottom text) */}
@@ -231,6 +264,7 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
           className="text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg tracking-wide transition-transform duration-500 group-hover:scale-105"
           style={{ fontFamily: "var(--font-family-playfair)" }}
         >
+<<<<<<< HEAD
           {renderItem(album.displayName)}
         </h3>
         <span
@@ -239,6 +273,10 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
         >
           {CATEGORY_LABELS[album.category]}
         </span>
+=======
+          {album.displayName}
+        </h3>
+>>>>>>> b5905f9 (Fresh clean commit)
       </div>
     </div>
   );

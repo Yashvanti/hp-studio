@@ -13,7 +13,11 @@ export default function ServicesPage() {
 
   const renderItem = (item: string) => {
     return item.split('&').map((part, i) => (
+<<<<<<< HEAD
       i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
+=======
+      i > 0 ? <><span style={{ color: '#FFB936' }}>&</span>{part}</> : part
+>>>>>>> b5905f9 (Fresh clean commit)
     ));
   };
 
@@ -140,7 +144,11 @@ const services = [
                 className="text-2xl md:text-3xl font-bold mb-3"
                 style={{ fontFamily: "var(--font-family-playfair)", color: "#0d0d0d" }}
               >
+<<<<<<< HEAD
                 {renderItem(s.title)}
+=======
+                {s.title}
+>>>>>>> b5905f9 (Fresh clean commit)
               </h3>
               <p className="text-sm leading-relaxed mb-5" style={{ color: "#555" }}>
                 {s.desc}
@@ -156,7 +164,11 @@ const services = [
               </ul>
 
               <a
+<<<<<<< HEAD
                 href="https://wa.me/918530331040"
+=======
+                href="https://wa.me/91XXXXXXXXXX"
+>>>>>>> b5905f9 (Fresh clean commit)
                 target="_blank"
                 rel="noopener noreferrer"
                 className="self-center inline-flex items-center justify-center px-7 py-2.5 text-xs tracking-[0.2em] font-semibold uppercase rounded-full transition-all duration-300 hover:scale-105"

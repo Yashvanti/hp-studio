@@ -20,12 +20,15 @@ const team = [
 export default function TeamSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
+<<<<<<< HEAD
   const renderItem = (item: string) => {
     return item.split('&').map((part, i) => (
       i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
     ));
   };
 
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
   useEffect(() => {
     if (sectionRef.current) {
       gsap.fromTo(
@@ -81,7 +84,11 @@ export default function TeamSection() {
                 {member.name}
               </h3>
               <p className="text-sm" style={{ color: "#666" }}>
+<<<<<<< HEAD
                 {renderItem(member.role)}
+=======
+                {member.role}
+>>>>>>> b5905f9 (Fresh clean commit)
               </p>
             </div>
           ))}

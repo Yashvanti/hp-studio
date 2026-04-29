@@ -3,7 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+<<<<<<< HEAD
 import { gsap } from "gsap";
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -77,7 +80,11 @@ export default function Navbar() {
               </Link>
             ))}
             <a
+<<<<<<< HEAD
               href="https://wa.me/918530331040"
+=======
+              href="https://wa.me/91XXXXXXXXXX"
+>>>>>>> b5905f9 (Fresh clean commit)
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-6 py-2 text-xs tracking-[0.15em] font-semibold uppercase rounded-full transition-all duration-300 will-change-transform"
@@ -126,18 +133,30 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
+<<<<<<< HEAD
                 className={`text-white/80 hover:text-white text-base tracking-[0.15em] font-medium touch-friendly transition-colors`}
+=======
+                className={`${pathname === "/" && scrolled ? "text-black/80 hover:text-black" : "text-white/80 hover:text-white"} text-base tracking-[0.15em] font-medium touch-friendly`}
+>>>>>>> b5905f9 (Fresh clean commit)
                 style={{ color: pathname === link.href ? "#FFB936" : undefined }}
               >
                 {link.label}
               </Link>
             ))}
             <a
+<<<<<<< HEAD
               href="https://wa.me/918530331040"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="mt-2 w-full max-w-xs px-6 py-3 text-sm tracking-[0.15em] font-semibold border-2 rounded-full text-center"
+=======
+              href="https://wa.me/91XXXXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="mt-2 w-full max-w-xs px-6 py-3 text-sm tracking-[0.15em] font-semibold border-2 rounded-full"
+>>>>>>> b5905f9 (Fresh clean commit)
               style={{ borderColor: "#FFB936", color: "#FFB936" }}
             >
               BOOK NOW

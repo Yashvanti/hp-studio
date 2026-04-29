@@ -3,10 +3,16 @@
     "eslint.config.js",
     "src/**/*.ts",
     "src/**/*.tsx",
+<<<<<<< HEAD
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts"
+=======
+    "vite.config.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+>>>>>>> b5905f9 (Fresh clean commit)
   ],
   "compilerOptions": {
     "target": "ES2022",
@@ -17,7 +23,13 @@
       "DOM",
       "DOM.Iterable"
     ],
+<<<<<<< HEAD
     "types": [],
+=======
+    "types": [
+      "vite/client"
+    ],
+>>>>>>> b5905f9 (Fresh clean commit)
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,

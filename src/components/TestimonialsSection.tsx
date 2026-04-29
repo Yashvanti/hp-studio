@@ -27,7 +27,11 @@ const testimonials = [
   },
 ];
 
+<<<<<<< HEAD
 function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: React.RefObject<HTMLDivElement | null> }) {
+=======
+function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: React.RefObject<HTMLDivElement> }) {
+>>>>>>> b5905f9 (Fresh clean commit)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,7 +42,11 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `Hello HP Studio!\n\nI'd like to share a review:\n\nName: ${formData.name}\nEmail: ${formData.email}\nRating: ${'⭐'.repeat(formData.rating)}\nReview: ${formData.review}\n\nPlease contact me for any details.`;
+<<<<<<< HEAD
     const whatsappUrl = `https://wa.me/918530331040?text=${encodeURIComponent(message)}`;
+=======
+    const whatsappUrl = `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`;
+>>>>>>> b5905f9 (Fresh clean commit)
     if (modalRef.current) {
       gsap.to(modalRef.current, {
         scale: 0.8,
@@ -62,6 +70,7 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
           Name *
         </label>
+<<<<<<< HEAD
 <input
            type="text"
            required
@@ -70,11 +79,22 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
            style={{ borderColor: "#FFB936", outlineColor: "#FFB936" }}
          />
+=======
+        <input
+          type="text"
+          required
+          value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
+          style={{ borderColor: "#FFB936", focusRingColor: "#FFB936" }}
+        />
+>>>>>>> b5905f9 (Fresh clean commit)
       </div>
       <div>
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
           Email *
         </label>
+<<<<<<< HEAD
 <input
            type="email"
            required
@@ -83,6 +103,16 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
            style={{ borderColor: "#FFB936", outlineColor: "#FFB936" }}
          />
+=======
+        <input
+          type="email"
+          required
+          value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
+          style={{ borderColor: "#FFB936", focusRingColor: "#FFB936" }}
+        />
+>>>>>>> b5905f9 (Fresh clean commit)
       </div>
       <div>
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
@@ -106,6 +136,7 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
           Your Review *
         </label>
+<<<<<<< HEAD
 <textarea
            required
            value={formData.review}
@@ -115,6 +146,17 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
            style={{ borderColor: "#FFB936", outlineColor: "#FFB936" }}
            placeholder="Tell us about your experience..."
          />
+=======
+        <textarea
+          required
+          value={formData.review}
+          onChange={(e) => setFormData({ ...formData, review: e.target.value })}
+          rows={4}
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 resize-none"
+          style={{ borderColor: "#FFB936", focusRingColor: "#FFB936" }}
+          placeholder="Tell us about your experience..."
+        />
+>>>>>>> b5905f9 (Fresh clean commit)
       </div>
       <button
         type="submit"
@@ -128,6 +170,7 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
 }
 
 export default function TestimonialsSection() {
+<<<<<<< HEAD
 const sectionRef = useRef<HTMLElement | null>(null);
    const modalRef = useRef<HTMLDivElement | null>(null);
 
@@ -136,6 +179,10 @@ const sectionRef = useRef<HTMLElement | null>(null);
       i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
     ));
   };
+=======
+  const sectionRef = useRef<HTMLElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+>>>>>>> b5905f9 (Fresh clean commit)
   const [current, setCurrent] = useState(0);
   const [showForm, setShowForm] = useState(false);
 
@@ -215,7 +262,11 @@ const sectionRef = useRef<HTMLElement | null>(null);
                 {t.initial}
               </div>
               <span className="text-lg" style={{ fontFamily: "var(--font-family-poppins)", color: "#0d0d0d" }}>
+<<<<<<< HEAD
                 {renderItem(t.name)}
+=======
+                {t.name}
+>>>>>>> b5905f9 (Fresh clean commit)
               </span>
             </div>
           </div>

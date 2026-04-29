@@ -30,7 +30,11 @@ function ReelRow({ items, direction = "left", speed = 12 }: { items: GalleryItem
         {doubled.map((item, i) => (
           <div
             key={`${item.src}-${i}`}
+<<<<<<< HEAD
             className="relative overflow-hidden group cursor-pointer shrink-0 rounded-xl"
+=======
+            className="relative overflow-hidden group cursor-pointer flex-shrink-0 rounded-xl"
+>>>>>>> b5905f9 (Fresh clean commit)
             style={{ width: "210px", height: "300px", boxShadow: "0 8px 30px -8px rgba(0,0,0,0.6)" }}
           >
             <img
@@ -39,7 +43,11 @@ function ReelRow({ items, direction = "left", speed = 12 }: { items: GalleryItem
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
+<<<<<<< HEAD
             <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+=======
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+>>>>>>> b5905f9 (Fresh clean commit)
             <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
               <span className="text-xs font-medium tracking-wider uppercase" style={{ color: "#FFB936" }}>
                 {item.label}

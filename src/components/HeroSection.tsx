@@ -76,7 +76,11 @@ export default function HeroSection() {
   }, []);
 
   return (
+<<<<<<< HEAD
     <section ref={sectionRef} id="home" className="relative h-[100dvh] w-full overflow-hidden">
+=======
+    <section ref={sectionRef} id="home" className="relative h-screen w-full overflow-hidden">
+>>>>>>> b5905f9 (Fresh clean commit)
       {/* Background images — parallax container */}
       <div ref={bgRef} className="absolute inset-0 will-change-transform h-full w-full">
         {heroImages.map((img, i) => (
@@ -139,7 +143,11 @@ export default function HeroSection() {
             Book Your Shoot
           </a>
           <a
+<<<<<<< HEAD
             href="https://wa.me/918530331040"
+=======
+            href="https://wa.me/91XXXXXXXXXX"
+>>>>>>> b5905f9 (Fresh clean commit)
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-8 py-3 text-xs md:text-sm tracking-[0.15em] font-semibold uppercase border-2 rounded-full transition-all duration-300"

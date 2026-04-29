@@ -24,9 +24,13 @@ export default function StoryPage() {
   const { category, album } = useParams() as { category: string; album: string };
   const manifest = useManifest();
   const cat = category as CategoryKey;
+<<<<<<< HEAD
   const videoList = manifest.categories[cat]?.albums[album]?.videos || [];
   const videoSrc = videoList[0] || manifest.categories[cat]?.videos?.[0] || "/wedding-video.mp4";
   const videoIndex = videoList.indexOf(videoSrc);
+=======
+  const videoSrc = manifest.categories[cat]?.albums[album]?.video || manifest.categories[cat]?.video || "/wedding-video.mp4";
+>>>>>>> b5905f9 (Fresh clean commit)
   const heroRef = useRef<HTMLDivElement>(null);
   const heroBgRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
@@ -35,12 +39,15 @@ export default function StoryPage() {
   const albumDetails = useMemo(() => getAlbumDetails(manifest, cat, album), [manifest, cat, album]);
   const [activeEvent, setActiveEvent] = useState<string>("All");
 
+<<<<<<< HEAD
   const renderItem = (item: string) => {
     return item.split('&').map((part, i) => (
       i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
     ));
   };
 
+=======
+>>>>>>> b5905f9 (Fresh clean commit)
   const eventsList = useMemo(() => {
     if (!albumDetails?.events) return [];
     return Object.keys(albumDetails.events);
@@ -50,6 +57,7 @@ export default function StoryPage() {
     if (!albumDetails) return [];
     const photos: string[] = [];
     if (activeEvent === "All") {
+<<<<<<< HEAD
       // For wedding category, prioritize "wedding" event photos
       if (cat === "wedding" && albumDetails.events) {
         const eventEntries = Object.entries(albumDetails.events);
@@ -64,12 +72,23 @@ export default function StoryPage() {
             photos.push(...evphotos);
           }
         }
+=======
+      photos.push(...(albumDetails.photos || []));
+      if (albumDetails.events) {
+        for (const evphotos of Object.values(albumDetails.events)) {
+          photos.push(...evphotos);
+        }
+>>>>>>> b5905f9 (Fresh clean commit)
       }
     } else if (albumDetails.events && albumDetails.events[activeEvent]) {
       photos.push(...albumDetails.events[activeEvent]);
     }
     return photos;
+<<<<<<< HEAD
   }, [albumDetails, activeEvent, cat]);
+=======
+  }, [albumDetails, activeEvent]);
+>>>>>>> b5905f9 (Fresh clean commit)
 
   const [page, setPage] = useState(1);
   const visiblePhotos = useMemo(
@@ -85,6 +104,7 @@ export default function StoryPage() {
     if (!albumDetails) return [];
     const photos = [...(albumDetails.photos || [])];
     if (albumDetails.events) {
+<<<<<<< HEAD
       // For wedding category, prioritize "wedding" event photos
       if (cat === "wedding") {
         const eventEntries = Object.entries(albumDetails.events);
@@ -100,6 +120,14 @@ export default function StoryPage() {
     }
     return photos.slice(0, 4);
   }, [albumDetails, cat]);
+=======
+      for (const evphotos of Object.values(albumDetails.events)) {
+        photos.push(...evphotos);
+      }
+    }
+    return photos.slice(0, 4);
+  }, [albumDetails]);
+>>>>>>> b5905f9 (Fresh clean commit)
 
   // GSAP animations
   useEffect(() => {
@@ -108,7 +136,11 @@ export default function StoryPage() {
         heroRef.current.children,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "power3.out" },
+<<<<<<< HEAD
       ); 
+=======
+      );
+>>>>>>> b5905f9 (Fresh clean commit)
     }
   }, []);
 
@@ -150,6 +182,7 @@ export default function StoryPage() {
     }
   }, [visiblePhotos.length, page]);
 
+<<<<<<< HEAD
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -165,6 +198,11 @@ export default function StoryPage() {
   const nextVideo = () => setCurrentVideo((prev) => (prev + 1) % videoList.length);
   const prevVideo = () => setCurrentVideo((prev) => (prev - 1 + videoList.length) % videoList.length);
 
+=======
+  // Lightbox state
+  const [lightbox, setLightbox] = useState<number | null>(null);
+
+>>>>>>> b5905f9 (Fresh clean commit)
   return (
     <div className="overflow-x-hidden" style={{ backgroundColor: "#faf5eb" }}>
       <Navbar />
@@ -172,6 +210,7 @@ export default function StoryPage() {
       {/* ─── Video Section ─── */}
       <section className="pt-20 md:pt-24 pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<<<<<<< HEAD
           <div className="relative">
           <video
             ref={videoRef}
@@ -214,6 +253,17 @@ export default function StoryPage() {
               </>
             )}
           </div>
+=======
+          <video
+            className="w-full h-[600px] object-cover rounded-xl"
+            src={videoSrc}
+            controls
+            autoPlay
+            muted
+            poster="/images/wedding-couple-By2WaDyA.jpg"
+            onError={() => console.log('Video failed to load:', videoSrc)}
+          />
+>>>>>>> b5905f9 (Fresh clean commit)
         </div>
       </section>
 
@@ -227,7 +277,11 @@ export default function StoryPage() {
             className="text-4xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: "var(--font-family-playfair)", color: "#0d0d0d" }}
           >
+<<<<<<< HEAD
             {renderItem(displayName)}
+=======
+            {displayName}
+>>>>>>> b5905f9 (Fresh clean commit)
           </h1>
 
           {/* ─── Events Filter ─── */}
