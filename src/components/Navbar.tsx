@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { gsap } from "gsap";
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -125,7 +126,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`${pathname === "/" && scrolled ? "text-black/80 hover:text-black" : "text-white/80 hover:text-white"} text-base tracking-[0.15em] font-medium touch-friendly`}
+                className={`text-white/80 hover:text-white text-base tracking-[0.15em] font-medium touch-friendly transition-colors`}
                 style={{ color: pathname === link.href ? "#FFB936" : undefined }}
               >
                 {link.label}
@@ -136,7 +137,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 w-full max-w-xs px-6 py-3 text-sm tracking-[0.15em] font-semibold border-2 rounded-full"
+              className="mt-2 w-full max-w-xs px-6 py-3 text-sm tracking-[0.15em] font-semibold border-2 rounded-full text-center"
               style={{ borderColor: "#FFB936", color: "#FFB936" }}
             >
               BOOK NOW
