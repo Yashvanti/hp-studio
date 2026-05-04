@@ -76,7 +76,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="home" className="relative h-screen w-full overflow-hidden">
+    <section ref={sectionRef} id="home" className="relative h-[100dvh] w-full overflow-hidden">
       {/* Background images — parallax container */}
       <div ref={bgRef} className="absolute inset-0 will-change-transform h-full w-full">
         {heroImages.map((img, i) => (

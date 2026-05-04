@@ -141,6 +141,12 @@ export default function PortfolioPage() {
 function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
   const cardRef = useRef<HTMLDivElement>(null);
 
+  const renderItem = (item: string) => {
+    return item.split('&').map((part, i) => (
+      i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
+    ));
+  };
+
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (!cardRef.current) return;
@@ -201,7 +207,7 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
           className="text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg tracking-wide transition-transform duration-500 group-hover:scale-105"
           style={{ fontFamily: "var(--font-family-playfair)" }}
         >
-          {album.displayName}
+          {renderItem(album.displayName)}
         </h3>
       </div>
     </div>

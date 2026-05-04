@@ -49,7 +49,7 @@ for (const catName of readdirSync(ROOT)) {
           const eventPhotos = readdirSync(albumEntryPath)
             .filter((f) => VALID.test(f))
             .sort()
-            .map((f) => `/images/${catName}/${entry}/${albumEntry}/${f}`);
+            .map((f) => encodeURI(`/images/${catName}/${entry}/${albumEntry}/${f}`));
 
           if (eventPhotos.length) {
             albumData.events[albumEntry] = eventPhotos;
@@ -57,7 +57,7 @@ for (const catName of readdirSync(ROOT)) {
           }
         } else if (VALID.test(albumEntry)) {
           // Loose image inside the album directory
-          albumData.photos.push(`/images/${catName}/${entry}/${albumEntry}`);
+          albumData.photos.push(encodeURI(`/images/${catName}/${entry}/${albumEntry}`));
           total++;
         }
       }
@@ -69,7 +69,7 @@ for (const catName of readdirSync(ROOT)) {
       }
     } else if (VALID.test(entry)) {
       // Loose image file directly in category
-      loose.push(`/images/${catName}/${entry}`);
+      loose.push(encodeURI(`/images/${catName}/${entry}`));
       total++;
     }
   }

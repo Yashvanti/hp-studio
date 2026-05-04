@@ -33,6 +33,12 @@ export default function StoryPage() {
   const albumDetails = useMemo(() => getAlbumDetails(manifest, cat, album), [manifest, cat, album]);
   const [activeEvent, setActiveEvent] = useState<string>("All");
 
+  const renderItem = (item: string) => {
+    return item.split('&').map((part, i) => (
+      i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
+    ));
+  };
+
   const eventsList = useMemo(() => {
     if (!albumDetails?.events) return [];
     return Object.keys(albumDetails.events);
@@ -156,7 +162,7 @@ export default function StoryPage() {
             className="text-4xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: "var(--font-family-playfair)", color: "#0d0d0d" }}
           >
-            {displayName}
+            {renderItem(displayName)}
           </h1>
 
           {/* ─── Events Filter ─── */}

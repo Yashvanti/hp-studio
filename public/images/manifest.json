@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T16:12:42.453Z",
+  "generatedAt": "2026-05-04T15:54:47.849Z",
   "total": 163,
   "categories": {
     "baby": {
@@ -162,39 +162,38 @@
     "wedding": {
       "albums": {
         "ananya-rohit": {
-          "video": "/videos/ananya-rohit.mp4",
           "photos": [
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (1).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (10).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (11).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (12).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (13).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (14).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (15).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (16).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (17).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (18).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (19).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (2).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (20).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (21).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (22).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (23).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (24).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (25).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (26).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (27).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (28).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (29).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (3).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (4).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (5).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (6).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (7).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (8).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM (9).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.14 PM.jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp Image 2026-04-28 at 8.13.15 PM.jpeg"
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(1).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(10).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(11).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(12).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(13).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(14).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(15).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(16).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(17).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(18).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(19).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(2).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(20).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(21).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(22).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(23).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(24).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(25).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(26).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(27).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(28).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(29).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(3).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(4).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(5).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(6).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(7).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(8).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(9).jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM.jpeg",
+            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.15%20PM.jpeg"
           ],
           "events": {
             "haldi": [
@@ -254,7 +253,6 @@
           }
         },
         "priya-karan": {
-          "video": "/videos/video1.mp4",
           "photos": [],
           "events": {
             "haldi": [

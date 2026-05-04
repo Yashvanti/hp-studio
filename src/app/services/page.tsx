@@ -13,7 +13,7 @@ export default function ServicesPage() {
 
   const renderItem = (item: string) => {
     return item.split('&').map((part, i) => (
-      i > 0 ? <><span style={{ color: '#FFB936' }}>&</span>{part}</> : part
+      i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
     ));
   };
 
@@ -140,7 +140,7 @@ const services = [
                 className="text-2xl md:text-3xl font-bold mb-3"
                 style={{ fontFamily: "var(--font-family-playfair)", color: "#0d0d0d" }}
               >
-                {s.title}
+                {renderItem(s.title)}
               </h3>
               <p className="text-sm leading-relaxed mb-5" style={{ color: "#555" }}>
                 {s.desc}

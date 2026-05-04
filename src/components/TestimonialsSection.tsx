@@ -130,6 +130,12 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
 export default function TestimonialsSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+
+  const renderItem = (item: string) => {
+    return item.split('&').map((part, i) => (
+      i > 0 ? <span key={i}><span style={{ color: '#FFB936' }}>&</span>{part}</span> : part
+    ));
+  };
   const [current, setCurrent] = useState(0);
   const [showForm, setShowForm] = useState(false);
 
@@ -209,7 +215,7 @@ export default function TestimonialsSection() {
                 {t.initial}
               </div>
               <span className="text-lg" style={{ fontFamily: "var(--font-family-poppins)", color: "#0d0d0d" }}>
-                {t.name}
+                {renderItem(t.name)}
               </span>
             </div>
           </div>
