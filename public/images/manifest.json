@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-04T15:54:47.849Z",
-  "total": 163,
+  "total": 165,
   "categories": {
     "baby": {
       "albums": {
@@ -317,6 +317,13 @@
               "/images/wedding/snehal-rahul/wedding/photo-5.jpg"
             ]
           }
+        },
+        "shweta-pranav": {
+          "photos": [
+            "/images/wedding/shweta-pranav/Shweta&Pranav.png",
+            "/images/wedding/shweta-pranav/Shweta&pranav2.png"
+          ],
+          "events": {}
         }
       },
       "loose": []
