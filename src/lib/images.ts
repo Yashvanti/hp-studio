@@ -14,6 +14,7 @@ export type CategoryKey =
   | "wedding"
   | "pre-wedding"
   | "baby"
+  | "Maternity"
   | "events"
   | "commercial"
   | "team";
@@ -40,6 +41,7 @@ export const CATEGORY_LABELS: Record<CategoryKey, string> = {
   wedding: "Wedding",
   "pre-wedding": "Pre-Wedding",
   baby: "Baby",
+  Maternity: "Maternity",
   events: "Events",
   commercial: "Commercial",
   team: "Team",
@@ -52,6 +54,7 @@ export const PUBLIC_CATEGORIES: CategoryKey[] = [
   "wedding",
   "pre-wedding",
   "baby",
+  "Maternity",
   "events",
   "commercial",
 ];

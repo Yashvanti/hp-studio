@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-19T14:36:44.206Z",
-  "total": 101,
+  "generatedAt": "2026-06-20T11:22:24.870Z",
+  "total": 278,
   "categories": {
     "baby": {
       "albums": {
@@ -105,28 +105,158 @@
       },
       "loose": []
     },
+    "Maternity": {
+      "albums": {
+        "shraddha-saurabh-maternity": {
+          "photos": [
+            "/images/Maternity/shraddha-saurabh-maternity/DSC01549.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity/DSC01572.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity/DSC01588.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity/DSC01603.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity/DSC01619.JPG"
+          ],
+          "events": {}
+        },
+        "shraddha-saurabh-maternity2": {
+          "photos": [
+            "/images/Maternity/shraddha-saurabh-maternity2/DSC01290.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity2/DSC01292.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity2/DSC01295.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity2/DSC01311.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity2/DSC01370.JPG"
+          ],
+          "events": {}
+        },
+        "shraddha-saurabh-maternity3": {
+          "photos": [
+            "/images/Maternity/shraddha-saurabh-maternity3/DSC08929.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity3/DSC08938.JPG",
+            "/images/Maternity/shraddha-saurabh-maternity3/DSC09110.JPG"
+          ],
+          "events": {}
+        },
+        "shraddha-saurabh-maternity4": {
+          "photos": [
+            "/images/Maternity/shraddha-saurabh-maternity4/DSC00051.jpg",
+            "/images/Maternity/shraddha-saurabh-maternity4/DSC00061.jpg",
+            "/images/Maternity/shraddha-saurabh-maternity4/DSC00119.jpg",
+            "/images/Maternity/shraddha-saurabh-maternity4/DSC00358.jpg"
+          ],
+          "events": {}
+        },
+        "shraddha-sourabh-maternity": {
+          "photos": [
+            "/images/Maternity/shraddha-sourabh-maternity/DSC01210.JPG",
+            "/images/Maternity/shraddha-sourabh-maternity/DSC01222.JPG",
+            "/images/Maternity/shraddha-sourabh-maternity/DSC01244.JPG",
+            "/images/Maternity/shraddha-sourabh-maternity/DSC01280.JPG",
+            "/images/Maternity/shraddha-sourabh-maternity/DSC01287.JPG"
+          ],
+          "events": {}
+        }
+      },
+      "loose": []
+    },
     "pre-wedding": {
       "albums": {
-        "neha-vikas": {
-          "photos": [],
-          "events": {
-            "haldi": [
-              "/images/pre-wedding/neha-vikas/haldi/photo-1.jpg",
-              "/images/pre-wedding/neha-vikas/haldi/photo-2.jpg"
-            ],
-            "prewedding": [
-              "/images/pre-wedding/neha-vikas/prewedding/photo-1.jpg",
-              "/images/pre-wedding/neha-vikas/prewedding/photo-2.jpg"
-            ],
-            "reception": [
-              "/images/pre-wedding/neha-vikas/reception/photo-1.jpg",
-              "/images/pre-wedding/neha-vikas/reception/photo-2.jpg"
-            ],
-            "wedding": [
-              "/images/pre-wedding/neha-vikas/wedding/photo-1.jpg",
-              "/images/pre-wedding/neha-vikas/wedding/photo-2.jpg"
-            ]
-          }
+        "Pratik-Ekta": {
+          "photos": [
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding1.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding10.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding11.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding12.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding13.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding14.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding15.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding16.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding17.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding18.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding19.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding2.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding20.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding3.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding4.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding5.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding6.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding7.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding8.jpg",
+            "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding9.jpg"
+          ],
+          "events": {}
+        },
+        "Shweta-Pranav": {
+          "photos": [
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta1.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta10.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta12.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta13.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta14.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta15.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta16.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta17.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta18.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta19.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta2.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta20.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta21.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta3.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta4.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta5.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta6.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta7.jpg",
+            "/images/pre-wedding/Shweta-Pranav/Pranav-Shweta8.jpg"
+          ],
+          "events": {}
+        },
+        "Sourabh-Sakshi": {
+          "photos": [
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi1.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi10.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi11.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi12.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi13.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi14.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi15.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi16.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi17.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi18.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi19.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi2.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi20.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi3.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi4.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi5.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi6.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi7.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi8.jpg",
+            "/images/pre-wedding/Sourabh-Sakshi/sourabh-sakshi9.jpg"
+          ],
+          "events": {}
+        },
+        "swapnil-kajal": {
+          "photos": [
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding1.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding10.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding11.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding12.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding13.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding14.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding15.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding16.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding17.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding18.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding19.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding2.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding20.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding3.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding4.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding5.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding6.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding7.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding8.jpg",
+            "/images/pre-wedding/swapnil-kajal/swapnil-kajal-prewedding9.jpg"
+          ],
+          "events": {}
         }
       },
       "loose": []
@@ -140,76 +270,175 @@
     },
     "wedding": {
       "albums": {
-        "priya-karan": {
+        "Pratik-Ekta": {
           "photos": [],
           "events": {
-            "haldi": [
-              "/images/wedding/priya-karan/haldi/photo-1.jpg",
-              "/images/wedding/priya-karan/haldi/photo-2.jpg",
-              "/images/wedding/priya-karan/haldi/photo-3.jpg",
-              "/images/wedding/priya-karan/haldi/photo-4.jpg",
-              "/images/wedding/priya-karan/haldi/photo-5.jpg"
-            ],
             "prewedding": [
-              "/images/wedding/priya-karan/prewedding/photo-1.jpg",
-              "/images/wedding/priya-karan/prewedding/photo-2.jpg",
-              "/images/wedding/priya-karan/prewedding/photo-3.jpg",
-              "/images/wedding/priya-karan/prewedding/photo-4.jpg",
-              "/images/wedding/priya-karan/prewedding/photo-5.jpg"
-            ],
-            "reception": [
-              "/images/wedding/priya-karan/reception/photo-1.jpg",
-              "/images/wedding/priya-karan/reception/photo-2.jpg",
-              "/images/wedding/priya-karan/reception/photo-3.jpg",
-              "/images/wedding/priya-karan/reception/photo-4.jpg",
-              "/images/wedding/priya-karan/reception/photo-5.jpg"
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding1.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding10.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding11.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding12.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding13.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding14.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding15.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding16.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding17.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding18.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding19.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding2.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding20.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding3.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding4.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding5.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding6.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding7.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding8.jpg",
+              "/images/wedding/Pratik-Ekta/prewedding/Eikta-pratik-prewedding9.jpg"
             ],
             "wedding": [
-              "/images/wedding/priya-karan/wedding/photo-1.jpg",
-              "/images/wedding/priya-karan/wedding/photo-2.jpg",
-              "/images/wedding/priya-karan/wedding/photo-3.jpg",
-              "/images/wedding/priya-karan/wedding/photo-4.jpg",
-              "/images/wedding/priya-karan/wedding/photo-5.jpg"
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta1.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta10.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta11.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta2.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta3.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta4.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta5.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta6.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta7.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta8.jpg",
+              "/images/wedding/Pratik-Ekta/wedding/pratik-ekta9.jpg"
+            ]
+          }
+        },
+        "Sakshi-Ajinkya": {
+          "photos": [],
+          "events": {
+            "Wedding": [
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya10.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya11.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya12.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya13.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya14.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya15.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya2.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya3.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya4.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya5.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya6.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya7.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya8.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya9.jpg",
+              "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajinkya1.jpg"
             ]
           }
         },
         "shweta-pranav": {
-          "photos": [
-            "/images/wedding/shweta-pranav/Shweta&Pranav.png",
-            "/images/wedding/shweta-pranav/Shweta&pranav2.png"
-          ],
-          "events": {}
-        },
-        "snehal-rahul": {
           "photos": [],
           "events": {
-            "haldi": [
-              "/images/wedding/snehal-rahul/haldi/photo-1.jpg",
-              "/images/wedding/snehal-rahul/haldi/photo-2.jpg",
-              "/images/wedding/snehal-rahul/haldi/photo-3.jpg",
-              "/images/wedding/snehal-rahul/haldi/photo-4.jpg",
-              "/images/wedding/snehal-rahul/haldi/photo-5.jpg"
-            ],
+            "mehendi": [
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi1.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi10.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi11.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi12.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi13.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi14.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi15.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi2.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi3.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi4.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi5.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi6.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi7.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi8.jpg",
+              "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi9.jpg"
+            ]
+          }
+        },
+        "sourabh-sakshi": {
+          "photos": [],
+          "events": {
             "prewedding": [
-              "/images/wedding/snehal-rahul/prewedding/photo-1.jpg",
-              "/images/wedding/snehal-rahul/prewedding/photo-2.jpg",
-              "/images/wedding/snehal-rahul/prewedding/photo-3.jpg",
-              "/images/wedding/snehal-rahul/prewedding/photo-4.jpg",
-              "/images/wedding/snehal-rahul/prewedding/photo-5.jpg"
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi1.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi10.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi11.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi12.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi13.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi14.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi15.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi16.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi17.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi18.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi19.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi2.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi20.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi3.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi4.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi5.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi6.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi7.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi8.jpg",
+              "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi9.jpg"
+            ]
+          }
+        },
+        "Swapnil-Kajal": {
+          "photos": [],
+          "events": {
+            "prewedding": [
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding1.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding10.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding11.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding12.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding13.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding14.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding15.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding16.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding17.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding18.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding19.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding2.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding20.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding3.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding4.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding5.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding6.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding7.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding8.jpg",
+              "/images/wedding/Swapnil-Kajal/prewedding/swapnil-kajal-prewedding9.jpg"
             ],
-            "reception": [
-              "/images/wedding/snehal-rahul/reception/photo-1.jpg",
-              "/images/wedding/snehal-rahul/reception/photo-2.jpg",
-              "/images/wedding/snehal-rahul/reception/photo-3.jpg",
-              "/images/wedding/snehal-rahul/reception/photo-4.jpg",
-              "/images/wedding/snehal-rahul/reception/photo-5.jpg"
-            ],
-            "wedding": [
-              "/images/wedding/snehal-rahul/wedding/photo-1.jpg",
-              "/images/wedding/snehal-rahul/wedding/photo-2.jpg",
-              "/images/wedding/snehal-rahul/wedding/photo-3.jpg",
-              "/images/wedding/snehal-rahul/wedding/photo-4.jpg",
-              "/images/wedding/snehal-rahul/wedding/photo-5.jpg"
+            "Wedding": [
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding1.jpg",
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding2.jpg",
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding3.jpg",
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding4.jpg",
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding5.jpg",
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding6.jpg",
+              "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding7.jpg"
+            ]
+          }
+        },
+        "Tanishka-Prasad": {
+          "photos": [],
+          "events": {
+            "Wedding": [
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad1.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad10.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad11.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad12.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad13.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad14.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad15.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad16.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad17.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad18.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad2.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad3.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad4.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad5.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad6.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad7.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad8.jpg",
+              "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad9.jpg"
             ]
           }
         }
