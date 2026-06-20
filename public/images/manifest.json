@@ -1,59 +1,38 @@
 {
-  "generatedAt": "2026-05-04T15:54:47.849Z",
-  "total": 165,
+  "generatedAt": "2026-06-19T14:36:44.206Z",
+  "total": 101,
   "categories": {
     "baby": {
       "albums": {
-        "aarav-sharma": {
-          "photos": [],
-          "events": {
-            "1st-birthday": [
-              "/images/baby/aarav-sharma/1st-birthday/photo-1.jpg"
-            ],
-            "cake-smash": [
-              "/images/baby/aarav-sharma/cake-smash/photo-1.jpg"
-            ],
-            "maternity": [
-              "/images/baby/aarav-sharma/maternity/photo-1.jpg"
-            ],
-            "newborn": [
-              "/images/baby/aarav-sharma/newborn/photo-1.jpg"
-            ]
-          }
-        },
-        "kiara-mehta": {
-          "photos": [],
-          "events": {
-            "1st-birthday": [
-              "/images/baby/kiara-mehta/1st-birthday/photo-1.jpg"
-            ],
-            "cake-smash": [
-              "/images/baby/kiara-mehta/cake-smash/photo-1.jpg"
-            ],
-            "maternity": [
-              "/images/baby/kiara-mehta/maternity/photo-1.jpg"
-            ],
-            "newborn": [
-              "/images/baby/kiara-mehta/newborn/photo-1.jpg"
-            ]
-          }
-        },
-        "little-reyaan": {
-          "photos": [],
-          "events": {
-            "1st-birthday": [
-              "/images/baby/little-reyaan/1st-birthday/photo-1.jpg"
-            ],
-            "cake-smash": [
-              "/images/baby/little-reyaan/cake-smash/photo-1.jpg"
-            ],
-            "maternity": [
-              "/images/baby/little-reyaan/maternity/photo-1.jpg"
-            ],
-            "newborn": [
-              "/images/baby/little-reyaan/newborn/photo-1.jpg"
-            ]
-          }
+        "baby": {
+          "photos": [
+            "/images/baby/baby/DSC02691.JPG",
+            "/images/baby/baby/DSC02697.JPG",
+            "/images/baby/baby/DSC02704.JPG",
+            "/images/baby/baby/DSC02718.JPG",
+            "/images/baby/baby/DSC02721.JPG",
+            "/images/baby/baby/DSC02726.JPG",
+            "/images/baby/baby/DSC02736.JPG",
+            "/images/baby/baby/DSC02755.JPG",
+            "/images/baby/baby/DSC02770.JPG",
+            "/images/baby/baby/DSC02784.JPG",
+            "/images/baby/baby/DSC04348.JPG",
+            "/images/baby/baby/DSC04360.JPG",
+            "/images/baby/baby/DSC04384.JPG",
+            "/images/baby/baby/DSC05525.JPG",
+            "/images/baby/baby/DSC05532.JPG",
+            "/images/baby/baby/DSC05535.JPG",
+            "/images/baby/baby/DSC05546.JPG",
+            "/images/baby/baby/DSC05556.JPG",
+            "/images/baby/baby/DSC05564.JPG",
+            "/images/baby/baby/DSC05591.JPG",
+            "/images/baby/baby/DSC056090.JPG",
+            "/images/baby/baby/DSC05648.JPG",
+            "/images/baby/baby/DSC05650.JPG",
+            "/images/baby/baby/DSC05670.JPG",
+            "/images/baby/baby/EB17544F-8891-40C6-879A-CA39147F1A66.JPG"
+          ],
+          "events": {}
         }
       },
       "loose": []
@@ -161,97 +140,6 @@
     },
     "wedding": {
       "albums": {
-        "ananya-rohit": {
-          "photos": [
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(1).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(10).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(11).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(12).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(13).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(14).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(15).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(16).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(17).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(18).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(19).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(2).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(20).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(21).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(22).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(23).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(24).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(25).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(26).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(27).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(28).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(29).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(3).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(4).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(5).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(6).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(7).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(8).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM%20(9).jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.14%20PM.jpeg",
-            "/images/wedding/ananya-rohit/WhatsApp%20Image%202026-04-28%20at%208.13.15%20PM.jpeg"
-          ],
-          "events": {
-            "haldi": [
-              "/images/wedding/ananya-rohit/haldi/photo-1.jpg",
-              "/images/wedding/ananya-rohit/haldi/photo-2.jpg",
-              "/images/wedding/ananya-rohit/haldi/photo-3.jpg",
-              "/images/wedding/ananya-rohit/haldi/photo-4.jpg",
-              "/images/wedding/ananya-rohit/haldi/photo-5.jpg"
-            ],
-            "prewedding": [
-              "/images/wedding/ananya-rohit/prewedding/photo-1.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-10.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-11.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-12.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-13.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-14.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-15.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-16.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-17.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-18.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-19.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-2.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-20.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-21.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-22.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-23.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-24.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-25.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-26.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-27.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-28.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-29.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-3.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-30.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-31.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-4.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-5.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-6.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-7.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-8.png",
-              "/images/wedding/ananya-rohit/prewedding/photo-9.png"
-            ],
-            "reception": [
-              "/images/wedding/ananya-rohit/reception/photo-1.jpg",
-              "/images/wedding/ananya-rohit/reception/photo-2.jpg",
-              "/images/wedding/ananya-rohit/reception/photo-3.jpg",
-              "/images/wedding/ananya-rohit/reception/photo-4.jpg",
-              "/images/wedding/ananya-rohit/reception/photo-5.jpg"
-            ],
-            "wedding": [
-              "/images/wedding/ananya-rohit/wedding/photo-1.jpg",
-              "/images/wedding/ananya-rohit/wedding/photo-2.jpg",
-              "/images/wedding/ananya-rohit/wedding/photo-3.jpg",
-              "/images/wedding/ananya-rohit/wedding/photo-4.jpg",
-              "/images/wedding/ananya-rohit/wedding/photo-5.jpg"
-            ]
-          }
-        },
         "priya-karan": {
           "photos": [],
           "events": {
@@ -285,6 +173,13 @@
             ]
           }
         },
+        "shweta-pranav": {
+          "photos": [
+            "/images/wedding/shweta-pranav/Shweta&Pranav.png",
+            "/images/wedding/shweta-pranav/Shweta&pranav2.png"
+          ],
+          "events": {}
+        },
         "snehal-rahul": {
           "photos": [],
           "events": {
@@ -317,13 +212,6 @@
               "/images/wedding/snehal-rahul/wedding/photo-5.jpg"
             ]
           }
-        },
-        "shweta-pranav": {
-          "photos": [
-            "/images/wedding/shweta-pranav/Shweta&Pranav.png",
-            "/images/wedding/shweta-pranav/Shweta&pranav2.png"
-          ],
-          "events": {}
         }
       },
       "loose": []

@@ -27,7 +27,7 @@ const testimonials = [
   },
 ];
 
-function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: React.RefObject<HTMLDivElement> }) {
+function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: React.RefObject<HTMLDivElement | null> }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -62,27 +62,27 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
           Name *
         </label>
-        <input
-          type="text"
-          required
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-          style={{ borderColor: "#FFB936", focusRingColor: "#FFB936" }}
-        />
+<input
+           type="text"
+           required
+           value={formData.name}
+           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
+           style={{ borderColor: "#FFB936", outlineColor: "#FFB936" }}
+         />
       </div>
       <div>
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
           Email *
         </label>
-        <input
-          type="email"
-          required
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-          style={{ borderColor: "#FFB936", focusRingColor: "#FFB936" }}
-        />
+<input
+           type="email"
+           required
+           value={formData.email}
+           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
+           style={{ borderColor: "#FFB936", outlineColor: "#FFB936" }}
+         />
       </div>
       <div>
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
@@ -106,15 +106,15 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
         <label className="block text-sm font-medium mb-1" style={{ color: "#0d0d0d" }}>
           Your Review *
         </label>
-        <textarea
-          required
-          value={formData.review}
-          onChange={(e) => setFormData({ ...formData, review: e.target.value })}
-          rows={4}
-          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 resize-none"
-          style={{ borderColor: "#FFB936", focusRingColor: "#FFB936" }}
-          placeholder="Tell us about your experience..."
-        />
+<textarea
+           required
+           value={formData.review}
+           onChange={(e) => setFormData({ ...formData, review: e.target.value })}
+           rows={4}
+           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 resize-none"
+           style={{ borderColor: "#FFB936", outlineColor: "#FFB936" }}
+           placeholder="Tell us about your experience..."
+         />
       </div>
       <button
         type="submit"
@@ -128,8 +128,8 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
 }
 
 export default function TestimonialsSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const modalRef = useRef<HTMLDivElement>(null);
+const sectionRef = useRef<HTMLElement | null>(null);
+   const modalRef = useRef<HTMLDivElement | null>(null);
 
   const renderItem = (item: string) => {
     return item.split('&').map((part, i) => (

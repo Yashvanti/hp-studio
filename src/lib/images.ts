@@ -21,11 +21,13 @@ export type CategoryKey =
 export type Album = {
   photos: string[];
   events?: Record<string, string[]>;
+  video?: string;
 };
 
 export type CategoryData = {
   albums: Record<string, Album>;
   loose: string[];
+  video?: string;
 };
 
 export type Manifest = {
@@ -76,10 +78,11 @@ function normalizeManifest(raw: any): Manifest {
       const albumsRecord: Record<string, Album> = {};
       for (const [aKey, aVal] of Object.entries(v.albums ?? {})) {
         const albumVal = aVal as any;
-        albumsRecord[aKey] = {
-          photos: albumVal.photos ?? [],
-          events: albumVal.events ?? {},
-        };
+albumsRecord[aKey] = {
+           photos: albumVal.photos ?? [],
+           events: albumVal.events ?? {},
+           video: albumVal.video,
+         };
       }
       cats[key as CategoryKey] = {
         albums: albumsRecord,

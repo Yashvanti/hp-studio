@@ -88,7 +88,7 @@ export default function StoryPage() {
         heroRef.current.children,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: "power3.out" },
-      );
+      ); 
     }
   }, []);
 
