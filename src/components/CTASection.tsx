@@ -163,7 +163,7 @@ export default function CTASection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 md:mt-10">
               {/* Book Now — filled gold */}
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/918530331040"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-9 py-3 text-xs tracking-[0.2em] font-bold uppercase rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -178,7 +178,7 @@ export default function CTASection() {
 
               {/* Chat on WhatsApp — outlined */}
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/918530331040"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 text-xs tracking-[0.2em] font-bold uppercase rounded-full border transition-all duration-300 hover:scale-105"

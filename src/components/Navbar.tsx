@@ -77,7 +77,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/918530331040"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-6 py-2 text-xs tracking-[0.15em] font-semibold uppercase rounded-full transition-all duration-300 will-change-transform"
@@ -133,7 +133,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/918530331040"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}

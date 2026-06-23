@@ -38,7 +38,7 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `Hello HP Studio!\n\nI'd like to share a review:\n\nName: ${formData.name}\nEmail: ${formData.email}\nRating: ${'⭐'.repeat(formData.rating)}\nReview: ${formData.review}\n\nPlease contact me for any details.`;
-    const whatsappUrl = `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918530331040?text=${encodeURIComponent(message)}`;
     if (modalRef.current) {
       gsap.to(modalRef.current, {
         scale: 0.8,

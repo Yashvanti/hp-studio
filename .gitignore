@@ -1,1 +1,5 @@
 node_modules
+.next
+public/images/**/*.mp4
+public/images/**/*.mov
+public/images/**/*.avi

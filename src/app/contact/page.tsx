@@ -53,7 +53,7 @@ export default function ContactPage() {
     const phone = (form.elements.namedItem("phone") as HTMLInputElement).value;
 
     const text = `Hi HP Studio!%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${text}`, "_blank");
+    window.open(`https://wa.me/918530331040?text=${text}`, "_blank");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
@@ -92,7 +92,7 @@ export default function ContactPage() {
         >
           {/* Phone */}
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+918530331040"
             className="contact-card group bg-white rounded-2xl p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-2"
             style={{ boxShadow: "0 10px 40px -15px rgba(0,0,0,0.1)" }}
           >
@@ -110,12 +110,12 @@ export default function ContactPage() {
             >
               Phone
             </h3>
-            <p className="text-sm" style={{ color: "#777" }}>+91 XXXXX XXXXX</p>
+            <p className="text-sm" style={{ color: "#777" }}>+91 85303 31040</p>
           </a>
 
           {/* Email */}
           <a
-            href="mailto:hpstudio@gmail.com"
+            href="mailto:hpstudio1@gmail.com"
             className="contact-card group bg-white rounded-2xl p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-2"
             style={{ boxShadow: "0 10px 40px -15px rgba(0,0,0,0.1)" }}
           >
@@ -134,12 +134,12 @@ export default function ContactPage() {
             >
               Email
             </h3>
-            <p className="text-sm" style={{ color: "#777" }}>hpstudio@gmail.com</p>
+            <p className="text-sm" style={{ color: "#777" }}>hpstudio1@gmail.com</p>
           </a>
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+                  href="https://wa.me/918530331040"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card group bg-white rounded-2xl p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-2"
@@ -182,7 +182,7 @@ export default function ContactPage() {
             >
               Studio
             </h3>
-            <p className="text-sm" style={{ color: "#777" }}>Your Studio Address</p>
+            <p className="text-sm" style={{ color: "#777" }}>Near Sanjivani Hospital, Tandulwadi</p>
           </div>
         </div>
       </section>
@@ -237,7 +237,7 @@ export default function ContactPage() {
                   name="phone"
                   type="tel"
                   required
-                  placeholder="+91 XXXXX XXXXX"
+                  placeholder="+91 85303 31040"
                   className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all duration-200 focus:ring-2"
                   style={{
                     backgroundColor: "#faf5eb",
@@ -324,10 +324,10 @@ export default function ContactPage() {
                     HP Studio Location
                   </p>
                   <p className="text-xs mt-1" style={{ color: "#777" }}>
-                    Your Studio Address Here
+                     Near Sanjivani Hospital, Tandulwadi
                   </p>
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.app.goo.gl/AgtmQZgNQeureU3M8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-3 px-5 py-2 text-[10px] tracking-[0.2em] font-bold uppercase rounded-full transition-all duration-300 hover:scale-105"
@@ -371,7 +371,7 @@ export default function ContactPage() {
 
               <div className="mt-6 flex gap-3">
                 <a
-                  href="https://instagram.com/hp_studio_07"
+                  href="https://www.instagram.com/hp_studio1040"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -384,7 +384,7 @@ export default function ContactPage() {
                   </svg>
                 </a>
                 <a
-                  href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/918530331040"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-110"

@@ -139,7 +139,7 @@ export default function HeroSection() {
             Book Your Shoot
           </a>
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/918530331040"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-8 py-3 text-xs md:text-sm tracking-[0.15em] font-semibold uppercase border-2 rounded-full transition-all duration-300"

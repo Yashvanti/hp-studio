@@ -24,7 +24,9 @@ export default function StoryPage() {
   const { category, album } = useParams() as { category: string; album: string };
   const manifest = useManifest();
   const cat = category as CategoryKey;
-  const videoSrc = manifest.categories[cat]?.albums[album]?.video || manifest.categories[cat]?.video || "/wedding-video.mp4";
+  const videoList = manifest.categories[cat]?.albums[album]?.videos || [];
+  const videoSrc = videoList[0] || manifest.categories[cat]?.videos?.[0] || "/wedding-video.mp4";
+  const videoIndex = videoList.indexOf(videoSrc);
   const heroRef = useRef<HTMLDivElement>(null);
   const heroBgRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
@@ -130,8 +132,20 @@ export default function StoryPage() {
     }
   }, [visiblePhotos.length, page]);
 
-  // Lightbox state
   const [lightbox, setLightbox] = useState<number | null>(null);
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const currentVideoSrc = videoList[currentVideo] || videoSrc;
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, [currentVideoSrc]);
+
+  const nextVideo = () => setCurrentVideo((prev) => (prev + 1) % videoList.length);
+  const prevVideo = () => setCurrentVideo((prev) => (prev - 1 + videoList.length) % videoList.length);
 
   return (
     <div className="overflow-x-hidden" style={{ backgroundColor: "#faf5eb" }}>
@@ -140,15 +154,48 @@ export default function StoryPage() {
       {/* ─── Video Section ─── */}
       <section className="pt-20 md:pt-24 pb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative">
           <video
+            ref={videoRef}
             className="w-full h-[600px] object-cover rounded-xl"
-            src={videoSrc}
+            src={currentVideoSrc}
             controls
             autoPlay
             muted
+            playsInline
             poster="/images/wedding-couple-By2WaDyA.jpg"
-            onError={() => console.log('Video failed to load:', videoSrc)}
+            onError={() => console.log('Video failed to load:', currentVideoSrc)}
           />
+            {videoList.length > 1 && (
+              <>
+                <button
+                  onClick={prevVideo}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-black/60 text-white rounded-full flex items-center justify-center transition-colors"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </button>
+                <button
+                  onClick={nextVideo}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-black/60 text-white rounded-full flex items-center justify-center transition-colors"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </button>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                  {videoList.map((v, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrentVideo(i)}
+                      className={`w-3 h-3 rounded-full transition-colors ${i === currentVideo ? 'bg-white' : 'bg-white/50'}`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </section>
 

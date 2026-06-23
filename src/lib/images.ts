@@ -22,13 +22,13 @@ export type CategoryKey =
 export type Album = {
   photos: string[];
   events?: Record<string, string[]>;
-  video?: string;
+  videos?: string[];
 };
 
 export type CategoryData = {
   albums: Record<string, Album>;
   loose: string[];
-  video?: string;
+  videos?: string[];
 };
 
 export type Manifest = {
@@ -55,8 +55,6 @@ export const PUBLIC_CATEGORIES: CategoryKey[] = [
   "pre-wedding",
   "baby",
   "Maternity",
-  "events",
-  "commercial",
 ];
 
 /* ─── Manifest loading (cached + deduped) ─── */
@@ -82,10 +80,10 @@ function normalizeManifest(raw: any): Manifest {
       for (const [aKey, aVal] of Object.entries(v.albums ?? {})) {
         const albumVal = aVal as any;
 albumsRecord[aKey] = {
-           photos: albumVal.photos ?? [],
-           events: albumVal.events ?? {},
-           video: albumVal.video,
-         };
+            photos: albumVal.photos ?? [],
+            events: albumVal.events ?? {},
+            videos: albumVal.videos ?? (albumVal.video ? [albumVal.video] : []),
+          };
       }
       cats[key as CategoryKey] = {
         albums: albumsRecord,
@@ -132,6 +130,7 @@ export type AlbumInfo = {
   cover: string;       // first photo
   coverAlt: string;    // second photo (for collage) or same as cover
   photoCount: number;
+  videos?: string[];   // optional videos for album
 };
 
 /* ─── Helper: get all photos for a category (albums + loose) ─── */
@@ -196,14 +195,15 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
         
         if (!totalCount) continue;
         
-        albums.push({
-          slug,
-          category: cat,
-          displayName: albumDisplayName(slug, cat),
-          cover: cover1 || "/placeholder.svg",
-          coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
-          photoCount: totalCount,
-        });
+albums.push({
+            slug,
+            category: cat,
+            displayName: albumDisplayName(slug, cat),
+            cover: cover1 || "/placeholder.svg",
+            coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
+            photoCount: totalCount,
+            videos: album?.videos,
+          });
       }
     }
 

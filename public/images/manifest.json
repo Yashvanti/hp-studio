@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T11:22:24.870Z",
+  "generatedAt": "2026-06-23T06:01:18.438Z",
   "total": 278,
   "categories": {
     "baby": {
@@ -308,7 +308,10 @@
               "/images/wedding/Pratik-Ekta/wedding/pratik-ekta8.jpg",
               "/images/wedding/Pratik-Ekta/wedding/pratik-ekta9.jpg"
             ]
-          }
+          },
+          "videos": [
+            "/images/wedding/Pratik-Ekta/video/pratik-ekta.mp4"
+          ]
         },
         "Sakshi-Ajinkya": {
           "photos": [],
@@ -330,7 +333,10 @@
               "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajankya9.jpg",
               "/images/wedding/Sakshi-Ajinkya/Wedding/sakshi-ajinkya1.jpg"
             ]
-          }
+          },
+          "videos": [
+            "/images/wedding/Sakshi-Ajinkya/video/sakshi-ajinkya.mp4"
+          ]
         },
         "shweta-pranav": {
           "photos": [],
@@ -379,7 +385,10 @@
               "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi8.jpg",
               "/images/wedding/sourabh-sakshi/prewedding/sourabh-sakshi9.jpg"
             ]
-          }
+          },
+          "videos": [
+            "/images/wedding/sourabh-sakshi/videos/sourabh-sakshi.mp4"
+          ]
         },
         "Swapnil-Kajal": {
           "photos": [],
@@ -415,7 +424,10 @@
               "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding6.jpg",
               "/images/wedding/Swapnil-Kajal/Wedding/swapnil-kajal-wedding7.jpg"
             ]
-          }
+          },
+          "videos": [
+            "/images/wedding/Swapnil-Kajal/videos/swapnil-kajal.mp4"
+          ]
         },
         "Tanishka-Prasad": {
           "photos": [],
@@ -440,7 +452,10 @@
               "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad8.jpg",
               "/images/wedding/Tanishka-Prasad/Wedding/Tanishka-Prasad9.jpg"
             ]
-          }
+          },
+          "videos": [
+            "/images/wedding/Tanishka-Prasad/video/tanishka-prasad.mp4"
+          ]
         }
       },
       "loose": []

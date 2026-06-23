@@ -169,33 +169,57 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
       className="album-card group relative overflow-hidden rounded-2xl md:rounded-3xl cursor-pointer block aspect-[4/3] md:aspect-[3/2] will-change-transform"
       style={{ boxShadow: "0 12px 40px -15px rgba(0,0,0,0.2)" }}
     >
-      {/* Cover collage: two images side by side */}
-      {album.cover !== album.coverAlt ? (
-        <div className="flex w-full h-full">
-          <div className="w-1/2 h-full overflow-hidden">
+      {/* Cover: image or video thumbnail */}
+      {album.videos && album.videos.length > 0 ? (
+        <div className="relative w-full h-full">
+          <video
+            src={album.videos[0]}
+            poster={album.cover}
+            muted
+            autoPlay
+            playsInline
+            preload="metadata"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          {/* Play icon overlay */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 bg-black/50 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
+          {album.cover !== album.coverAlt ? (
+            <div className="flex w-full h-full">
+              <div className="w-1/2 h-full overflow-hidden">
+                <img
+                  src={album.cover}
+                  alt={album.displayName}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+              <div className="w-1/2 h-full overflow-hidden border-l border-white/20">
+                <img
+                  src={album.coverAlt}
+                  alt={album.displayName}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+            </div>
+          ) : (
             <img
               src={album.cover}
               alt={album.displayName}
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-          </div>
-          <div className="w-1/2 h-full overflow-hidden border-l border-white/20">
-            <img
-              src={album.coverAlt}
-              alt={album.displayName}
-              loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-          </div>
-        </div>
-      ) : (
-        <img
-          src={album.cover}
-          alt={album.displayName}
-          loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+          )}
+        </>
       )}
 
       {/* Dark gradient overlay covering whole card smoothly */}
