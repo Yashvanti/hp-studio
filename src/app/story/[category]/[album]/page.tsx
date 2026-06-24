@@ -64,11 +64,15 @@ export default function StoryPage() {
     const photos: string[] = [];
     if (activeEvent === "All") {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
       // For wedding category, prioritize "wedding" event photos
       if (cat === "wedding" && albumDetails.events) {
         const eventEntries = Object.entries(albumDetails.events);
         for (const [key, evphotos] of [...eventEntries.filter(([k]) => k.toLowerCase() === "wedding"),
             ...eventEntries.filter(([k]) => k.toLowerCase() !== "wedding")]) {
+<<<<<<< HEAD
           photos.push(...evphotos);
         }
       } else {
@@ -85,16 +89,31 @@ export default function StoryPage() {
           photos.push(...evphotos);
         }
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+          photos.push(...evphotos);
+        }
+      } else {
+        photos.push(...(albumDetails.photos || []));
+        if (albumDetails.events) {
+          for (const evphotos of Object.values(albumDetails.events)) {
+            photos.push(...evphotos);
+          }
+        }
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
       }
     } else if (albumDetails.events && albumDetails.events[activeEvent]) {
       photos.push(...albumDetails.events[activeEvent]);
     }
     return photos;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }, [albumDetails, activeEvent, cat]);
 =======
   }, [albumDetails, activeEvent]);
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+  }, [albumDetails, activeEvent, cat]);
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
 
   const [page, setPage] = useState(1);
   const visiblePhotos = useMemo(
@@ -111,6 +130,9 @@ export default function StoryPage() {
     const photos = [...(albumDetails.photos || [])];
     if (albumDetails.events) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
       // For wedding category, prioritize "wedding" event photos
       if (cat === "wedding") {
         const eventEntries = Object.entries(albumDetails.events);
@@ -122,6 +144,7 @@ export default function StoryPage() {
         for (const evphotos of Object.values(albumDetails.events)) {
           photos.push(...evphotos);
         }
+<<<<<<< HEAD
       }
     }
     return photos.slice(0, 4);
@@ -134,6 +157,12 @@ export default function StoryPage() {
     return photos.slice(0, 4);
   }, [albumDetails]);
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+      }
+    }
+    return photos.slice(0, 4);
+  }, [albumDetails, cat]);
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
 
   // GSAP animations
   useEffect(() => {

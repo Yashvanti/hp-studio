@@ -241,6 +241,7 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
       )}
 
 {/* Dark gradient overlay covering whole card smoothly */}
+<<<<<<< HEAD
 =======
           </div>
           <div className="w-1/2 h-full overflow-hidden border-l border-white/20">
@@ -267,6 +268,8 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
 
       {/* Dark gradient overlay covering whole card smoothly */}
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-500 ease-out" />
 
       {/* Centered Album name (Replaces bottom text) */}
@@ -284,10 +287,13 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
         >
           {CATEGORY_LABELS[album.category]}
         </span>
+<<<<<<< HEAD
 =======
           {album.displayName}
         </h3>
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
       </div>
     </div>
   );

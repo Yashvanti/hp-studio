@@ -181,16 +181,23 @@ export type AlbumInfo = {
 /* ─── Helper: get all photos for a category (albums + loose) ─── */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function getAllPhotos(catData: CategoryData, category?: CategoryKey): string[] {
 =======
 function getAllPhotos(catData: CategoryData): string[] {
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+function getAllPhotos(catData: CategoryData, category?: CategoryKey): string[] {
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
   const all: string[] = [];
   if (catData.albums) {
     for (const album of Object.values(catData.albums)) {
       if (album?.photos) all.push(...album.photos);
       if (album?.events) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
         // For wedding category, prioritize "wedding" event photos
         if (category === "wedding") {
           const eventEntries = Object.entries(album.events);
@@ -202,10 +209,13 @@ function getAllPhotos(catData: CategoryData): string[] {
           for (const evPhotos of Object.values(album.events)) {
             all.push(...evPhotos);
           }
+<<<<<<< HEAD
 =======
         for (const evPhotos of Object.values(album.events)) {
           all.push(...evPhotos);
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
         }
       }
     }
@@ -242,10 +252,14 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
     if (!data) continue;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Named albums
 =======
     // Named albums
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+// Named albums
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
     if (data.albums) {
       for (const [slug, album] of Object.entries(data.albums)) {
         let totalCount = album?.photos?.length || 0;
@@ -254,6 +268,9 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
 
         if (album?.events) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
           // Prioritize "wedding" event for cover selection in wedding category
           const eventEntries = Object.entries(album.events);
           const prioritizedEvents = cat === "wedding"
@@ -262,15 +279,19 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
             : eventEntries;
 
           for (const evPhotos of prioritizedEvents.map(([_, v]) => v)) {
+<<<<<<< HEAD
 =======
           for (const evPhotos of Object.values(album.events)) {
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
             totalCount += evPhotos.length;
             if (!cover1) { cover1 = evPhotos[0]; cover2 = evPhotos[1]; }
             else if (!cover2) { cover2 = evPhotos[0]; }
           }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         if (!totalCount) continue;
 
@@ -280,6 +301,11 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
         
 <<<<<<< HEAD
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+
+        if (!totalCount) continue;
+
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
         albums.push({
           slug,
           category: cat,
@@ -287,6 +313,7 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
           cover: cover1 || "/placeholder.svg",
           coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
           photoCount: totalCount,
+<<<<<<< HEAD
 <<<<<<< HEAD
           videos: album?.videos,
 =======
@@ -303,6 +330,10 @@ albums.push({
             videos: album?.videos,
           });
 >>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
+=======
+          videos: album?.videos,
+        });
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
       }
     }
 
@@ -343,6 +374,9 @@ export function getAlbumPhotos(
   const all = [...(details.photos || [])];
   if (details.events) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
     // For wedding category, prioritize "wedding" event photos
     if (category === "wedding") {
       const eventEntries = Object.entries(details.events);
@@ -353,9 +387,12 @@ export function getAlbumPhotos(
     } else {
       for (const ev of Object.values(details.events)) all.push(...ev);
     }
+<<<<<<< HEAD
 =======
     for (const ev of Object.values(details.events)) all.push(...ev);
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
   }
   return all;
 }
@@ -371,10 +408,14 @@ export function getHighlights(
     const data = manifest.categories[cat];
     if (!data) continue;
 <<<<<<< HEAD
+<<<<<<< HEAD
     const all = getAllPhotos(data, cat);
 =======
     const all = getAllPhotos(data);
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+    const all = getAllPhotos(data, cat);
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
     for (const src of all.slice(0, cap)) {
       items.push({ src, category: cat, label: CATEGORY_LABELS[cat] });
     }
@@ -392,10 +433,14 @@ export function pickFromCategory(
   const data = manifest.categories[category];
   if (!data) return [];
 <<<<<<< HEAD
+<<<<<<< HEAD
   return getAllPhotos(data, category).slice(0, count);
 =======
   return getAllPhotos(data).slice(0, count);
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+  return getAllPhotos(data, category).slice(0, count);
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
 }
 
 /* ─── Get all photos across categories for Masonry Grid ─── */
@@ -405,10 +450,14 @@ export function getAllMixedPhotos(manifest: Manifest, filterCat?: CategoryKey): 
     if (filterCat && filterCat !== cat) return [];
     const data = manifest.categories[cat];
 <<<<<<< HEAD
+<<<<<<< HEAD
     return data ? getAllPhotos(data, cat) : [];
 =======
     return data ? getAllPhotos(data) : [];
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+    return data ? getAllPhotos(data, cat) : [];
+>>>>>>> 0dfef5b (Fix wedding album photo priority, add category tags to albums, update Instagram name)
   });
 
   // Calculate the maximum length among all lists to know when to stop
