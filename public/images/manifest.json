@@ -1,10 +1,15 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
   "generatedAt": "2026-06-23T06:01:18.438Z",
   "total": 278,
+=======
+  "generatedAt": "2026-06-24T11:35:50.842Z",
+  "total": 297,
+>>>>>>> ddffad6 (Add new wedding videos, move pre-wedding video to correct category, update manifest)
   "categories": {
     "baby": {
       "albums": {
@@ -244,7 +249,10 @@
             "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding8.jpg",
             "/images/pre-wedding/Pratik-Ekta/Eikta-pratik-prewedding9.jpg"
           ],
-          "events": {}
+          "events": {},
+          "videos": [
+            "/images/pre-wedding/Pratik-Ekta/video/pratik-ekta-pre-wedding.mp4"
+          ]
         },
         "Shweta-Pranav": {
           "photos": [
@@ -444,6 +452,27 @@
               "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi7.jpg",
               "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi8.jpg",
               "/images/wedding/shweta-pranav/mehendi/shweta-pranav-mehendi9.jpg"
+            ],
+            "pre-wedding": [
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta1.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta10.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta12.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta13.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta14.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta15.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta16.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta17.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta18.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta19.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta2.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta20.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta21.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta3.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta4.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta5.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta6.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta7.jpg",
+              "/images/wedding/shweta-pranav/pre-wedding/Pranav-Shweta8.jpg"
             ]
           }
         },
