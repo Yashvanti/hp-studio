@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
   "generatedAt": "2026-06-23T06:01:18.438Z",
   "total": 278,
   "categories": {
@@ -540,6 +543,7 @@
           "videos": [
             "/images/wedding/Tanishka-Prasad/video/tanishka-prasad.mp4"
           ]
+<<<<<<< HEAD
 =======
         "ananya-rohit": {
           "video": "/videos/ananya-rohit.mp4",
@@ -700,6 +704,8 @@
             ]
           }
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
         }
       },
       "loose": []

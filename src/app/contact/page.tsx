@@ -54,10 +54,14 @@ export default function ContactPage() {
 
     const text = `Hi HP Studio!%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
 <<<<<<< HEAD
+<<<<<<< HEAD
     window.open(`https://wa.me/918530331040?text=${text}`, "_blank");
 =======
     window.open(`https://wa.me/91XXXXXXXXXX?text=${text}`, "_blank");
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+    window.open(`https://wa.me/918530331040?text=${text}`, "_blank");
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
@@ -97,10 +101,14 @@ export default function ContactPage() {
           {/* Phone */}
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
             href="tel:+918530331040"
 =======
             href="tel:+91XXXXXXXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            href="tel:+918530331040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
             className="contact-card group bg-white rounded-2xl p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-2"
             style={{ boxShadow: "0 10px 40px -15px rgba(0,0,0,0.1)" }}
           >
@@ -119,19 +127,27 @@ export default function ContactPage() {
               Phone
             </h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <p className="text-sm" style={{ color: "#777" }}>+91 85303 31040</p>
 =======
             <p className="text-sm" style={{ color: "#777" }}>+91 XXXXX XXXXX</p>
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            <p className="text-sm" style={{ color: "#777" }}>+91 85303 31040</p>
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
           </a>
 
           {/* Email */}
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
             href="mailto:hpstudio1@gmail.com"
 =======
             href="mailto:hpstudio@gmail.com"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            href="mailto:hpstudio1@gmail.com"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
             className="contact-card group bg-white rounded-2xl p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-2"
             style={{ boxShadow: "0 10px 40px -15px rgba(0,0,0,0.1)" }}
           >
@@ -151,19 +167,27 @@ export default function ContactPage() {
               Email
             </h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <p className="text-sm" style={{ color: "#777" }}>hpstudio1@gmail.com</p>
 =======
             <p className="text-sm" style={{ color: "#777" }}>hpstudio@gmail.com</p>
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            <p className="text-sm" style={{ color: "#777" }}>hpstudio1@gmail.com</p>
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
           </a>
 
           {/* WhatsApp */}
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
                   href="https://wa.me/918530331040"
 =======
             href="https://wa.me/91XXXXXXXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+                  href="https://wa.me/918530331040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card group bg-white rounded-2xl p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-2"
@@ -207,10 +231,14 @@ export default function ContactPage() {
               Studio
             </h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <p className="text-sm" style={{ color: "#777" }}>Near Sanjivani Hospital, Tandulwadi</p>
 =======
             <p className="text-sm" style={{ color: "#777" }}>Your Studio Address</p>
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            <p className="text-sm" style={{ color: "#777" }}>Near Sanjivani Hospital, Tandulwadi</p>
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
           </div>
         </div>
       </section>
@@ -266,10 +294,14 @@ export default function ContactPage() {
                   type="tel"
                   required
 <<<<<<< HEAD
+<<<<<<< HEAD
                   placeholder="+91 85303 31040"
 =======
                   placeholder="+91 XXXXX XXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+                  placeholder="+91 85303 31040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
                   className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all duration-200 focus:ring-2"
                   style={{
                     backgroundColor: "#faf5eb",
@@ -357,6 +389,7 @@ export default function ContactPage() {
                   </p>
                   <p className="text-xs mt-1" style={{ color: "#777" }}>
 <<<<<<< HEAD
+<<<<<<< HEAD
                      Near Sanjivani Hospital, Tandulwadi
                   </p>
                   <a
@@ -367,6 +400,12 @@ export default function ContactPage() {
                   <a
                     href="https://maps.google.com"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+                     Near Sanjivani Hospital, Tandulwadi
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/AgtmQZgNQeureU3M8"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-3 px-5 py-2 text-[10px] tracking-[0.2em] font-bold uppercase rounded-full transition-all duration-300 hover:scale-105"
@@ -411,10 +450,14 @@ export default function ContactPage() {
               <div className="mt-6 flex gap-3">
                 <a
 <<<<<<< HEAD
+<<<<<<< HEAD
                   href="https://www.instagram.com/hp_studio1040"
 =======
                   href="https://instagram.com/hp_studio_07"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+                  href="https://www.instagram.com/hp_studio1040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -428,10 +471,14 @@ export default function ContactPage() {
                 </a>
                 <a
 <<<<<<< HEAD
+<<<<<<< HEAD
             href="https://wa.me/918530331040"
 =======
                   href="https://wa.me/91XXXXXXXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            href="https://wa.me/918530331040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 hover:scale-110"

@@ -81,10 +81,14 @@ export default function Navbar() {
             ))}
             <a
 <<<<<<< HEAD
+<<<<<<< HEAD
               href="https://wa.me/918530331040"
 =======
               href="https://wa.me/91XXXXXXXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+              href="https://wa.me/918530331040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-6 py-2 text-xs tracking-[0.15em] font-semibold uppercase rounded-full transition-all duration-300 will-change-transform"
@@ -145,6 +149,9 @@ export default function Navbar() {
             ))}
             <a
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
               href="https://wa.me/918530331040"
               target="_blank"
               rel="noopener noreferrer"

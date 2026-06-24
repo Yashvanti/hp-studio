@@ -31,10 +31,14 @@ export default function Footer() {
               {/* WhatsApp */}
               <a
 <<<<<<< HEAD
+<<<<<<< HEAD
                 href="https://wa.me/918530331040"
 =======
                 href="https://wa.me/91XXXXXXXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+                href="https://wa.me/918530331040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
                 className="w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300"
                 style={{ borderColor: "rgba(255,255,255,0.2)" }}
               >
@@ -65,6 +69,9 @@ export default function Footer() {
               Contact Info
             </h4>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
               <div className="flex flex-col gap-3">
                 <a href="tel:+918530331040" className="flex items-center gap-3 hover:text-white transition-colors">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB936" strokeWidth="2">
@@ -98,6 +105,7 @@ export default function Footer() {
                   </svg>
                   <span className="text-white/50 text-sm">Near Sanjivani Hospital, Tandulwadi</span>
                 </a>
+<<<<<<< HEAD
               </div>
 =======
             <div className="flex flex-col gap-3">
@@ -129,6 +137,9 @@ export default function Footer() {
               </div>
             </div>
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+              </div>
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
           </div>
         </div>
 

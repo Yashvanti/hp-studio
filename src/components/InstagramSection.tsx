@@ -14,10 +14,14 @@ export default function InstagramSection() {
       src,
       label: ["Bridal Glow", "Pre-Wedding"][i] ?? "Moments",
 <<<<<<< HEAD
+<<<<<<< HEAD
       link: "https://www.instagram.com/hp_studio1040"
 =======
       link: "https://instagram.com/hpstudio"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+      link: "https://www.instagram.com/hp_studio1040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
     }));
     const videos = [
       { type: 'video', src: "/videos/instagram1.mp4", label: "Reel", link: "https://www.instagram.com/reel/DW0SoQKjPoi/?igsh=MXVrdTQyOGNheHhicQ==" },
@@ -67,6 +71,9 @@ export default function InstagramSection() {
           </h2>
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
             href="https://www.instagram.com/hp_studio1040"
             target="_blank"
             rel="noopener noreferrer"
@@ -74,6 +81,7 @@ export default function InstagramSection() {
             style={{ color: "#ffffffff" }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+<<<<<<< HEAD
             HP Studio
 =======
             href="https://instagram.com/hp_studio_07"
@@ -85,6 +93,9 @@ export default function InstagramSection() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
             @hp_studio_07
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            @hp_studio1040
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
           </a>
         </div>
 
@@ -134,10 +145,14 @@ export default function InstagramSection() {
         <div className="text-center mt-10">
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
             href="https://www.instagram.com/hp_studio1040"
 =======
             href="https://instagram.com/hp_studio_07"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+            href="https://www.instagram.com/hp_studio1040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 text-sm tracking-[0.15em] font-semibold uppercase border-2 rounded-full transition-all duration-300 hover:scale-105"

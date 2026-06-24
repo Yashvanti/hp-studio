@@ -26,18 +26,26 @@ export type Album = {
   photos: string[];
   events?: Record<string, string[]>;
 <<<<<<< HEAD
+<<<<<<< HEAD
   videos?: string[];
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+  videos?: string[];
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 };
 
 export type CategoryData = {
   albums: Record<string, Album>;
   loose: string[];
 <<<<<<< HEAD
+<<<<<<< HEAD
   videos?: string[];
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+  videos?: string[];
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 };
 
 export type Manifest = {
@@ -68,10 +76,13 @@ export const PUBLIC_CATEGORIES: CategoryKey[] = [
   "baby",
 <<<<<<< HEAD
   "Maternity",
+<<<<<<< HEAD
 =======
   "events",
   "commercial",
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 ];
 
 /* ─── Manifest loading (cached + deduped) ─── */
@@ -102,12 +113,15 @@ albumsRecord[aKey] = {
             events: albumVal.events ?? {},
             videos: albumVal.videos ?? (albumVal.video ? [albumVal.video] : []),
           };
+<<<<<<< HEAD
 =======
         albumsRecord[aKey] = {
           photos: albumVal.photos ?? [],
           events: albumVal.events ?? {},
         };
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       }
       cats[key as CategoryKey] = {
         albums: albumsRecord,
@@ -155,9 +169,13 @@ export type AlbumInfo = {
   coverAlt: string;    // second photo (for collage) or same as cover
   photoCount: number;
 <<<<<<< HEAD
+<<<<<<< HEAD
   videos?: string[];   // optional videos for album
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+  videos?: string[];   // optional videos for album
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 };
 
 /* ─── Helper: get all photos for a category (albums + loose) ─── */
@@ -260,6 +278,7 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
         
         if (!totalCount) continue;
         
+<<<<<<< HEAD
 >>>>>>> b5905f9 (Fresh clean commit)
         albums.push({
           slug,
@@ -273,6 +292,17 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
         });
+=======
+albums.push({
+            slug,
+            category: cat,
+            displayName: albumDisplayName(slug, cat),
+            cover: cover1 || "/placeholder.svg",
+            coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
+            photoCount: totalCount,
+            videos: album?.videos,
+          });
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       }
     }
 

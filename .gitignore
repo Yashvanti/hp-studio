@@ -4,6 +4,7 @@ node_modules
 public/images/**/*.mp4
 public/images/**/*.mov
 public/images/**/*.avi
+<<<<<<< HEAD
 =======
 # Logs
 logs
@@ -44,3 +45,5 @@ build
 .env
 .env.local
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)

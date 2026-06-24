@@ -173,6 +173,9 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
       style={{ boxShadow: "0 12px 40px -15px rgba(0,0,0,0.2)" }}
     >
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       {/* Cover: image or video thumbnail */}
       {album.videos && album.videos.length > 0 ? (
         <div className="relative w-full h-full">
@@ -216,18 +219,22 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
               </div>
             </div>
           ) : (
+<<<<<<< HEAD
 =======
       {/* Cover collage: two images side by side */}
       {album.cover !== album.coverAlt ? (
         <div className="flex w-full h-full">
           <div className="w-1/2 h-full overflow-hidden">
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
             <img
               src={album.cover}
               alt={album.displayName}
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
+<<<<<<< HEAD
 <<<<<<< HEAD
           )}
         </>
@@ -252,6 +259,10 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
           loading="lazy"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
+=======
+          )}
+        </>
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       )}
 
       {/* Dark gradient overlay covering whole card smoothly */}

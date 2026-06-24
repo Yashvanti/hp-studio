@@ -43,10 +43,14 @@ function ReviewForm({ onClose, modalRef }: { onClose: () => void; modalRef: Reac
     e.preventDefault();
     const message = `Hello HP Studio!\n\nI'd like to share a review:\n\nName: ${formData.name}\nEmail: ${formData.email}\nRating: ${'⭐'.repeat(formData.rating)}\nReview: ${formData.review}\n\nPlease contact me for any details.`;
 <<<<<<< HEAD
+<<<<<<< HEAD
     const whatsappUrl = `https://wa.me/918530331040?text=${encodeURIComponent(message)}`;
 =======
     const whatsappUrl = `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(message)}`;
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+    const whatsappUrl = `https://wa.me/918530331040?text=${encodeURIComponent(message)}`;
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
     if (modalRef.current) {
       gsap.to(modalRef.current, {
         scale: 0.8,

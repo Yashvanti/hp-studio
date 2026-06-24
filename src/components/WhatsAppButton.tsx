@@ -2,10 +2,14 @@ export default function WhatsAppButton() {
   return (
     <a
 <<<<<<< HEAD
+<<<<<<< HEAD
       href="https://wa.me/918530331040"
 =======
       href="https://wa.me/91XXXXXXXXXX"
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+      href="https://wa.me/918530331040"
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"

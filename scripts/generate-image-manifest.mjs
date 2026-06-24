@@ -19,9 +19,13 @@ const ROOT = join(process.cwd(), "public", "images");
 const OUT = join(ROOT, "manifest.json");
 const VALID = /\.(jpe?g|png|webp|avif|gif)$/i;
 <<<<<<< HEAD
+<<<<<<< HEAD
 const VIDEO = /\.(mp4|webm|mov)$/i;
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+const VIDEO = /\.(mp4|webm|mov)$/i;
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 
 if (!existsSync(ROOT)) {
   console.error("public/images/ not found");
@@ -45,18 +49,26 @@ for (const catName of readdirSync(ROOT)) {
       // This is an album sub-directory
       const albumData = { photos: [], events: {} };
 <<<<<<< HEAD
+<<<<<<< HEAD
       const videos = [];
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+      const videos = [];
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 
       for (const albumEntry of readdirSync(entryPath)) {
         const albumEntryPath = join(entryPath, albumEntry);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
         // Check for video file in album root
         if (VIDEO.test(albumEntry)) {
           videos.push(encodeURI(`/images/${catName}/${entry}/${albumEntry}`));
         }
+<<<<<<< HEAD
 
         if (statSync(albumEntryPath).isDirectory()) {
           const dirName = albumEntry.toLowerCase();
@@ -89,10 +101,29 @@ for (const catName of readdirSync(ROOT)) {
             .filter((f) => VALID.test(f))
             .sort()
             .map((f) => `/images/${catName}/${entry}/${albumEntry}/${f}`);
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
 
-          if (eventPhotos.length) {
-            albumData.events[albumEntry] = eventPhotos;
-            total += eventPhotos.length;
+        if (statSync(albumEntryPath).isDirectory()) {
+          const dirName = albumEntry.toLowerCase();
+          
+          if (dirName === "video" || dirName === "videos") {
+            const videoFiles = readdirSync(albumEntryPath)
+              .filter((f) => VIDEO.test(f))
+              .sort()
+              .map((f) => encodeURI(`/images/${catName}/${entry}/${albumEntry}/${f}`));
+
+            videos.push(...videoFiles);
+          } else {
+            const eventPhotos = readdirSync(albumEntryPath)
+              .filter((f) => VALID.test(f))
+              .sort()
+              .map((f) => encodeURI(`/images/${catName}/${entry}/${albumEntry}/${f}`));
+
+            if (eventPhotos.length) {
+              albumData.events[albumEntry] = eventPhotos;
+              total += eventPhotos.length;
+            }
           }
         } else if (VALID.test(albumEntry)) {
           // Loose image inside the album directory
@@ -105,12 +136,18 @@ for (const catName of readdirSync(ROOT)) {
       albumData.photos.sort();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       if (videos.length) {
         albumData.videos = videos;
       }
 
+<<<<<<< HEAD
 =======
 >>>>>>> b5905f9 (Fresh clean commit)
+=======
+>>>>>>> 70848b6 (Update contact details, instagram, portfolio filters, add shweta-pranav pre-wedding photos, remove large video files from tracking)
       if (albumData.photos.length || Object.keys(albumData.events).length) {
         albums[entry] = albumData;
       }
