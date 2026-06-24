@@ -222,7 +222,7 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
         </>
       )}
 
-      {/* Dark gradient overlay covering whole card smoothly */}
+{/* Dark gradient overlay covering whole card smoothly */}
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-500 ease-out" />
 
       {/* Centered Album name (Replaces bottom text) */}
@@ -233,6 +233,12 @@ function AlbumCard({ album, router }: { album: AlbumInfo; router: any }) {
         >
           {renderItem(album.displayName)}
         </h3>
+        <span
+          className="mt-2 text-xs md:text-sm font-medium tracking-wider uppercase"
+          style={{ color: "#FFB936" }}
+        >
+          {CATEGORY_LABELS[album.category]}
+        </span>
       </div>
     </div>
   );

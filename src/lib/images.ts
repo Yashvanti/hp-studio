@@ -135,14 +135,23 @@ export type AlbumInfo = {
 
 /* ─── Helper: get all photos for a category (albums + loose) ─── */
 
-function getAllPhotos(catData: CategoryData): string[] {
+function getAllPhotos(catData: CategoryData, category?: CategoryKey): string[] {
   const all: string[] = [];
   if (catData.albums) {
     for (const album of Object.values(catData.albums)) {
       if (album?.photos) all.push(...album.photos);
       if (album?.events) {
-        for (const evPhotos of Object.values(album.events)) {
-          all.push(...evPhotos);
+        // For wedding category, prioritize "wedding" event photos
+        if (category === "wedding") {
+          const eventEntries = Object.entries(album.events);
+          for (const [key, evPhotos] of [...eventEntries.filter(([k]) => k.toLowerCase() === "wedding"),
+              ...eventEntries.filter(([k]) => k.toLowerCase() !== "wedding")]) {
+            all.push(...evPhotos);
+          }
+        } else {
+          for (const evPhotos of Object.values(album.events)) {
+            all.push(...evPhotos);
+          }
         }
       }
     }
@@ -178,7 +187,7 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
     const data = manifest.categories[cat];
     if (!data) continue;
 
-    // Named albums
+// Named albums
     if (data.albums) {
       for (const [slug, album] of Object.entries(data.albums)) {
         let totalCount = album?.photos?.length || 0;
@@ -186,24 +195,31 @@ export function getAlbums(manifest: Manifest, filterCat?: CategoryKey): AlbumInf
         let cover2 = album?.photos?.[1];
 
         if (album?.events) {
-          for (const evPhotos of Object.values(album.events)) {
+          // Prioritize "wedding" event for cover selection in wedding category
+          const eventEntries = Object.entries(album.events);
+          const prioritizedEvents = cat === "wedding"
+            ? [...eventEntries.filter(([k]) => k.toLowerCase() === "wedding"),
+                ...eventEntries.filter(([k]) => k.toLowerCase() !== "wedding")]
+            : eventEntries;
+
+          for (const evPhotos of prioritizedEvents.map(([_, v]) => v)) {
             totalCount += evPhotos.length;
             if (!cover1) { cover1 = evPhotos[0]; cover2 = evPhotos[1]; }
             else if (!cover2) { cover2 = evPhotos[0]; }
           }
         }
-        
+
         if (!totalCount) continue;
-        
-albums.push({
-            slug,
-            category: cat,
-            displayName: albumDisplayName(slug, cat),
-            cover: cover1 || "/placeholder.svg",
-            coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
-            photoCount: totalCount,
-            videos: album?.videos,
-          });
+
+        albums.push({
+          slug,
+          category: cat,
+          displayName: albumDisplayName(slug, cat),
+          cover: cover1 || "/placeholder.svg",
+          coverAlt: cover2 ?? cover1 ?? "/placeholder.svg",
+          photoCount: totalCount,
+          videos: album?.videos,
+        });
       }
     }
 
@@ -243,7 +259,16 @@ export function getAlbumPhotos(
   if (!details) return [];
   const all = [...(details.photos || [])];
   if (details.events) {
-    for (const ev of Object.values(details.events)) all.push(...ev);
+    // For wedding category, prioritize "wedding" event photos
+    if (category === "wedding") {
+      const eventEntries = Object.entries(details.events);
+      for (const [key, ev] of [...eventEntries.filter(([k]) => k.toLowerCase() === "wedding"),
+          ...eventEntries.filter(([k]) => k.toLowerCase() !== "wedding")]) {
+        all.push(...ev);
+      }
+    } else {
+      for (const ev of Object.values(details.events)) all.push(...ev);
+    }
   }
   return all;
 }
@@ -258,7 +283,7 @@ export function getHighlights(
   for (const cat of PUBLIC_CATEGORIES) {
     const data = manifest.categories[cat];
     if (!data) continue;
-    const all = getAllPhotos(data);
+    const all = getAllPhotos(data, cat);
     for (const src of all.slice(0, cap)) {
       items.push({ src, category: cat, label: CATEGORY_LABELS[cat] });
     }
@@ -275,7 +300,7 @@ export function pickFromCategory(
 ): string[] {
   const data = manifest.categories[category];
   if (!data) return [];
-  return getAllPhotos(data).slice(0, count);
+  return getAllPhotos(data, category).slice(0, count);
 }
 
 /* ─── Get all photos across categories for Masonry Grid ─── */
@@ -284,7 +309,7 @@ export function getAllMixedPhotos(manifest: Manifest, filterCat?: CategoryKey): 
   const lists = PUBLIC_CATEGORIES.map((cat) => {
     if (filterCat && filterCat !== cat) return [];
     const data = manifest.categories[cat];
-    return data ? getAllPhotos(data) : [];
+    return data ? getAllPhotos(data, cat) : [];
   });
 
   // Calculate the maximum length among all lists to know when to stop

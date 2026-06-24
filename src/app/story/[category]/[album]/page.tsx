@@ -50,17 +50,26 @@ export default function StoryPage() {
     if (!albumDetails) return [];
     const photos: string[] = [];
     if (activeEvent === "All") {
-      photos.push(...(albumDetails.photos || []));
-      if (albumDetails.events) {
-        for (const evphotos of Object.values(albumDetails.events)) {
+      // For wedding category, prioritize "wedding" event photos
+      if (cat === "wedding" && albumDetails.events) {
+        const eventEntries = Object.entries(albumDetails.events);
+        for (const [key, evphotos] of [...eventEntries.filter(([k]) => k.toLowerCase() === "wedding"),
+            ...eventEntries.filter(([k]) => k.toLowerCase() !== "wedding")]) {
           photos.push(...evphotos);
+        }
+      } else {
+        photos.push(...(albumDetails.photos || []));
+        if (albumDetails.events) {
+          for (const evphotos of Object.values(albumDetails.events)) {
+            photos.push(...evphotos);
+          }
         }
       }
     } else if (albumDetails.events && albumDetails.events[activeEvent]) {
       photos.push(...albumDetails.events[activeEvent]);
     }
     return photos;
-  }, [albumDetails, activeEvent]);
+  }, [albumDetails, activeEvent, cat]);
 
   const [page, setPage] = useState(1);
   const visiblePhotos = useMemo(
@@ -76,12 +85,21 @@ export default function StoryPage() {
     if (!albumDetails) return [];
     const photos = [...(albumDetails.photos || [])];
     if (albumDetails.events) {
-      for (const evphotos of Object.values(albumDetails.events)) {
-        photos.push(...evphotos);
+      // For wedding category, prioritize "wedding" event photos
+      if (cat === "wedding") {
+        const eventEntries = Object.entries(albumDetails.events);
+        for (const [key, evphotos] of [...eventEntries.filter(([k]) => k.toLowerCase() === "wedding"),
+            ...eventEntries.filter(([k]) => k.toLowerCase() !== "wedding")]) {
+          photos.push(...evphotos);
+        }
+      } else {
+        for (const evphotos of Object.values(albumDetails.events)) {
+          photos.push(...evphotos);
+        }
       }
     }
     return photos.slice(0, 4);
-  }, [albumDetails]);
+  }, [albumDetails, cat]);
 
   // GSAP animations
   useEffect(() => {
